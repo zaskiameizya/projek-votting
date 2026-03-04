@@ -6,6 +6,6 @@
     <title>halaman 2</title>
 </head>
 <body>
-    Adalah pokoknya halaman 2
+    Adalah pokoknya halaman 2 hahhahaahha
 </body>
 </html>
