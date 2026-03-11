@@ -14,7 +14,7 @@
 }
 
 body{
-  background:#5e7c87;
+  background-image: url('BG.jpeg');
 }
 
 .container{

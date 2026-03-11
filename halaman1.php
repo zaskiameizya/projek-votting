@@ -38,7 +38,7 @@ body {
 .top-logos {
     position: absolute;
     top: 20px;
-    left: -140px;
+    left: -200px;
     right: 50px;
     display: flex;
     gap: 10px;
@@ -56,7 +56,7 @@ body {
     padding: 50px;
     border-radius: 20px;
     text-align: center;
-    width: 400px;
+    width: 500px;
     position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     margin-right: -50px;
@@ -112,7 +112,7 @@ p {
 
 .foto-orang{
     margin-right: -160px;
-    margin-top: 260px;
+    margin-top: 280px;
     z-index: 2;
 }
  
