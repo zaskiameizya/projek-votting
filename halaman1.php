@@ -20,6 +20,7 @@ body {
     align-items: center;
     height: 100vh; /* posisi kotakan dalam */
     overflow: hidden;
+    background-image: url('BG.jpeg');
 }
 
 /* icon */
@@ -37,29 +38,28 @@ body {
 .top-logos {
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: -140px;
     right: 50px;
     display: flex;
     gap: 10px;
 }
 
 .logo-circle {
-    width: 40px;
+    width: 30px;
     height: 40px;
-    background-color: white;
-    border-radius: 50%;
+    
 }
 
 
-
 .boxdalam {
-    background-color: #a5c3e6; /* Biru muda pucat */
-    padding: 90px;
+    background-color: #a5c3e6; 
+    padding: 50px;
     border-radius: 20px;
     text-align: center;
-    width: 450px;
+    width: 400px;
     position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin-right: -50px;
 }
 
 /* icon user */
@@ -111,9 +111,11 @@ p {
 }
 
 .foto-orang{
-    right: 20px;
+    margin-right: -160px;
     margin-top: 260px;
+    z-index: 2;
 }
+ 
 
 </style>
 </head>
@@ -128,10 +130,11 @@ p {
 </head>
 <body>
 
+
     <div class="iconatas">
         <div class="top-logos">
-            <div class="logo-circle"><img height="40px" src="logoosis-removebg-preview.png"> </div>
-            <div class="logo-circle"><img height="40px" src="logoosis-removebg-preview.png"> </div>
+            <div class="logo-circle2"><img height="80px" src="logoosis.png"> </div>
+            <div class="logo-circle"><img height="70px" src="logoo.png"> </div>
         </div>
 
         <div class="boxdalam">
@@ -148,10 +151,14 @@ p {
             
         </div>
 
+        
         </div>
 
         <div class="foto-orang">
             <img height="360px" src="2smk-removebg-preview.png">
+</div>
+ 
+        
 </body>
 </html>
 </body>
