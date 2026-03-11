@@ -14,7 +14,6 @@
 
 /* Background Utama Biru Gelap */
 body {
-    background-color: #1a2a44;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +105,10 @@ p {
     transform: scale(1.05);
 }
 
+.robot {
+
+}
+
 .icon-refresh {
     margin-right: 8px;
 }
@@ -130,7 +133,7 @@ p {
 </head>
 <body>
 
-
+     
     <div class="iconatas">
         <div class="top-logos">
             <div class="logo-circle2"><img height="80px" src="logoosis.png"> </div>
