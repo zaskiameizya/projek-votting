@@ -1,219 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Sistem E-Voting OSIS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <style>
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background: #6e8c8c;
+body{
+  background:#5e7c87;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
+.container{
+  display:flex;
+  height:100vh;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 230px;
-    background: #355f63;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+.sidebar{
+  width:150px;
+  background:#4c6f7a;
+  color:white;
+  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
-.logo h3 {
-    text-align: center;
-    margin-bottom: 30px;
+.sidebar h2{
+  text-align:center;
+  font-size:20px;
+  margin-bottom:40px;
 }
 
-.menu {
-    list-style: none;
+.menu{
+  list-style:none;
 }
 
-.menu li {
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    background: #2e5256;
-    border-radius: 5px;
+.menu li{
+  padding:10px;
+  margin-bottom:5px;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  cursor:pointer;
 }
 
-.menu li.active,
-.menu li:hover {
-    background: #4c7c80;
+.menu li:hover{
+  background:rgba(255,255,255,0.25);
 }
 
-.user {
-    text-align: center;
+.logout{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#2c4f5a;
+  color:white;
+  cursor:pointer;
 }
 
-.logout {
-    margin-top: 10px;
-    padding: 6px 12px;
-    background: #2e5256;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+.main{
+  flex:1;
+  padding:40px;
+  color:white;
 }
 
-/* Main */
-.main {
-    flex: 1;
-    padding: 40px;
+.main h1{
+  text-align:center;
+  margin-bottom:30px;
 }
 
-.main h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: white;
+.card{
+  display:flex;
+  background:rgba(255,255,255,0.15);
+  padding:25px;
+  border-radius:12px;
+  backdrop-filter: blur(5px);
 }
 
-.card {
-    background: #cfd8d8;
-    padding: 30px;
-    border-radius: 10px;
-    display: flex;
-    gap: 30px;
+.profile{
+  width:200px;
+  text-align:center;
 }
 
-.profile {
-    text-align: center;
+.profile img{
+  width:120px;
+  border-radius:10px;
+  margin-bottom:10px;
 }
 
-.profile img {
-    width: 120px;
-    border-radius: 5px;
+.profile .name{
+  font-weight:bold;
 }
 
-.caption {
-    margin-top: 10px;
-    font-size: 14px;
+.visi{
+  margin-:30px;
 }
 
-.caption span {
-    font-size: 12px;
-    color: gray;
+
+.visi-misi .jabatan{
+  font-size:14px;
+  margin-bottom:15px;
+  color:#ddd;
 }
 
-.content {
-    flex: 1;
+.visi-misi ol{
+  margin-left:20px;
 }
 
-.content h2 {
-    margin-bottom: 5px;
+.buttons{
+  margin-top:25px;
+  display:flex;
+  justify-content:space-between;
 }
 
-.sub {
-    font-size: 14px;
-    color: gray;
-    margin-bottom: 15px;
+.vote{
+  background:#7a8c92;
+  border:none;
+  padding:12px 30px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
 }
 
-.content h3 {
-    margin-top: 10px;
+.back{
+  background:#7a8c92;
+  border:none;
+  padding:12px 30px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
 }
 
-.content ol {
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
-.buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
-
-.vote {
-    padding: 8px 15px;
-    background: #5f6f6f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.back {
-    padding: 8px 15px;
-    background: #7a7a7a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.vote:hover {
-    background: #3d4d4d;
-}
-
-.back:hover {
-    background: #5a5a5a;
+.vote:hover,
+.back:hover{
+  background:#5f737a;
 }
 </style>
 <body>
 <div class="container">
 
-    <div class="sidebar">
-        <div class="logo">
-            <h3>Sistem<br>E-Voting<br>Osis</h3>
-        </div>
+  <div class="sidebar">
+    <h2>Sistem<br>E-Voting<br>Osis</h2>
 
-        <ul class="menu">
-            <li class="active">Voting</li>
-            <li>Hasil Voting</li>
-        </ul>
+    <ul class="menu">
+      <li>Voting</li>
+      <li>Hasil Voting</li>
+    </ul>
 
-        <div class="user">
-            <p>Hi Alletta</p>
-            <button class="logout">Log Out</button>
-        </div>
-    </div>
+    <button class="logout">Log Out</button>
+  </div>
 
-    <!-- Main Content -->
-    <div class="main">
-        <h1>Visi/Misi Kandidat</h1>
+  <div class="main">
 
-        <div class="card">
-            <div class="profile">
-                <img src="https://via.placeholder.com/120" alt="Foto Kandidat">
-                <p class="caption">Cantika Lestary<br><span>Kandidat 1 - Calon Ketua OSIS</span></p>
-            </div>
+    <h1>Visi/Misi Kandidat</h1>
 
-            <div class="content">
-                <h2>Cantika Lestary</h2>
-                <p class="sub">Kandidat 1 - calon ketua osis</p>
+    <div class="card">
 
-                <h3>Visi:</h3>
-                <p>"Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi"</p>
+      <div class="profile">
+        <img src="kandidat1.png" alt=>
+        <p class="name">Cantika Lestary</p>
+        <small>Kandidat 1 - Calon<br>Ketua OSIS</br></small>
+      </div>
 
-                <h3>Misi:</h3>
-                <ol>
-                    <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
-                    <li>Meningkatkan prestasi akademik dan non-akademik melalui program bimbingan dan pelatihan.</li>
-                    <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
-                </ol>
+      <div class="visi-misi">
+        <h2>Cantika Lestary</h2>
+        <p class="jabatan">Kandidat 1 - calon ketua osis</p>
 
-                <div class="buttons">
-                    <button class="vote">✔ Voting</button>
-                    <button class="back">↩ Kembali</button>
-                </div>
-            </div>
-        </div>
+        <p><b>Visi:</b><br>
+        “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
+        </p>
+
+        <p><b>Misi:</b></p>
+        <ol>
+          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
+          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
+          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+        </ol>
+      </div>
 
     </div>
+
+    <div class="buttons">
+      <button class="vote">✔ Voting</button>
+      <button class="back">↩ Kembali</button>
+    </div>
+
+  </div>
+
 </div>
 
 </body>
