@@ -16,6 +16,7 @@
       .container {
       display: flex;
       height: 100vh;
+      gap: 40px;
       }
 
       .sidebar{
