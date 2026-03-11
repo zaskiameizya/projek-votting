@@ -5,63 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            height: 100hv;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        .card {
-            background: #e6f0f8;
-            width: 400px;
-            padding: 30px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
+/* Background Utama Biru Gelap */
+body {
+    background-color: #1a2a44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* posisi kotakan dalam */
+    overflow: hidden;
+}
 
-        .icon {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
+/* icon */
+.iconatas {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
 
-        h2 {
-            color: #1e3c72;
-            margin-bottom: 10px;
-        }
+/* logo di pojok kiri */
+.top-logos {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+}
 
-        p {
-            color: #333;
-            margin-bottom: 20px;
-        }
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
 
-        button {
-            padding: 10px 20px;
-            background-color: #1e3c72;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
 
-        button:hover {
-            background-color: #16325c;
-        }
-        </style>
+
+.boxdalam {
+    background-color: #a5c3e6; /* Biru muda pucat */
+    padding: 90px;
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* icon user */
+.icon-usererror {
+    background-color: #263238;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -75px auto 20px auto;
+    color: white;
+    font-size: 30px;
+    border: 5px solid #1a2a44;
+}
+
+h2 {
+    color: #1a2a44;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+p {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn-cobalagi {
+    background-color: #e0eafc;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: #1a2a44;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.btn-coba {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.icon-refresh {
+    margin-right: 8px;
+}
+
+.foto-orang{
+    right: 20px;
+    margin-top: 260px;
+}
+
+</style>
 </head>
 <body>
-    <div class="card">
-        <div class="icon"> </div>
-        <h2>Autentifikasi gagal!</h2>
-        <p>NISN dan Kode salah!</p>
-        <button onclick="halaman2.php>
-        COBA LAGI
-        </button>
-</div>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagal Login - E-Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="iconatas">
+        <div class="top-logos">
+            <div class="logo-circle"><img height="40px" src="logoosis-removebg-preview.png"> </div>
+            <div class="logo-circle"><img height="40px" src="logoosis-removebg-preview.png"> </div>
+        </div>
+
+        <div class="boxdalam">
+            <div class="icon-usererror">
+                <span>&#128100;</span>
+            </div>
+        
+            
+            <h2>Autentifikasi Gagal!</h2>
+            <p>NISN dan Kode salah!</p>
+
+            <button class="btn-cobalagi">
+                <span class="icon-refresh">&#8634;</span> COBA LAGI</button>
+            
+        </div>
+
+        </div>
+
+        <div class="foto-orang">
+            <img height="360px" src="2smk-removebg-preview.png">
+</body>
+</html>
 </body>
 </html>
