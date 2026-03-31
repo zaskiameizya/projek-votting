@@ -22,41 +22,67 @@
             font-size: 98px;            
         }
         .container { 
-            display: flex;  
-            flex-direction: column;
+            display: flex;
+            justify-content: center;
             align-items: center;
             margin: 0 auto;
-            opacity: 40%;
             border-radius: 50px;
-            background-color: #D9D9D9;
+            box-shadow: 0 4px 8px rgba(61, 57, 57, 0.1);
+            background-color: rgba(217, 217, 217, 0.4);
             width: 2800px;
             height: 900px;               
         }
-        .nisn{
-            background-color: #D9D9D9;
-            color: #9A9E9C;
-            align-items: center;
-            opacity: 50%;
-            font-family: 'Inika';
-            font-size: 24px;
-            border-radius: 50px;
+        .form {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           
         }
-        .kode{
+        .nisn, .kode {
             background-color: #D9D9D9;
-            color: #9A9E9C;
+            display: flex;
             align-items: center;
-            opacity: 50%;
-            font-family: 'Inika';
-            font-size: 24px;
+            justify-content: center;
             border-radius: 50px;
+            box-shadow: 0 20px 20px rgba(78, 75, 75, 0.1);
+            width: 2500px;
+            height: 120px;
+            margin: 20px auto;
+            overflow: hidden;
+            -webkit-text-stroke-width: 5px #9A9E9C;                
         }
-        .button{
+        .nisn input, .kode input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 2500px;
+            height: 120px;
+            font-size: 70px;
+            text-align: center;
+            font-family: 'Inika';
+            -webkit-text-stroke-width: 5px #9A9E9C;
+        }
+        .nisn i, .kode i {
+            font-size: 70px;
+            color: #050505;
+            transform: translateX(100px);
+        }
+        .login-btn {
             background-color: #0B2635;
             color: #FFFFFF;
-            align-items: center;
-            opacity: 50%;
             font-family: 'Inika';
-            font-size: 24px;
+            font-size: 70px;
+            border-radius: 50px;
+            width: 2500px;
+            height: 120px;
+            margin: 20px auto;
+            border: none;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #0B2635;
         }
         .footer {
             text-align: center;
@@ -80,19 +106,21 @@
     </div>
 
     <div class="container">
-        <div class="nisn">
-            <i class="hgi hgi-solid hgi-user-03"></i>
-            <input type="password" placeholder="NISN">
-        </div>
+        <form class="form">
+            
+             <div class="nisn">
+               <i class="hgi hgi-stroke hgi-edit-user-02"></i>
+               <input type="text" placeholder="NISN">
+             </div>
 
-        <div class="kode">
-            <i class="hgi hgi-solid hgi-authorized"></i>
-            <input type="password" id="kode" name="kode" placeholder="Kode">
-        </div>
+             <div class="kode">
+               <i class="hgi hgi-stroke hgi-authorized"></i>
+               <input type="password"  placeholder="Kode">
+             </div>
 
-        <div class="button">
-            <button type="submit">Login</button>
-        </div>
+             <button type="submit" class="login-btn">Login</button>
+
+        </form>
     </div>
 
     <div class="footer">
