@@ -74,20 +74,42 @@ body{
   margin-bottom:30px;
 }
 
-.boxdalam {
-    background-color: #a3c5ec; 
-    padding: 100px;
-    border-radius: 20px;
-    text-align: center;
-    width: 500px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-   margin-left:-500;
+.card{
+  display:flex;
+  background:rgba(255,255,255,0.15);
+  padding:25px;
+  border-radius:12px;
+  backdrop-filter: blur(5px);
 }
-.text{
+
+.profile{
+  width:200px;
+  text-align:center;
+}
+
+.profile img{
+  width:120px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.profile .name{
+  font-weight:bold;
+}
+
+.visi{
+  margin-:30px;
+}
+
+
+.visi-misi .jabatan{
   font-size:14px;
   margin-bottom:15px;
   color:#ddd;
+}
+
+.visi-misi ol{
+  margin-left:20px;
 }
 
 .buttons{
@@ -134,16 +156,39 @@ body{
   </div>
 
   <div class="main">
-    <div class="boxdalam">
-      <div class="text">
-       <h2>Pilihan anda sudah kami simpan,
-Terima kasih sudah berpartisipasi 
-dalam voting ini.</h2>
+
+    <h1>Visi/Misi Kandidat</h1>
+
+    <div class="card">
+
+      <div class="profile">
+        <img src="kandidat1.png" alt=>
+        <p class="name">Cantika Lestary</p>
+        <small>Kandidat 1 - Calon<br>Ketua OSIS</br></small>
+      </div>
+
+      <div class="visi-misi">
+        <h2>Cantika Lestary</h2>
+        <p class="jabatan">Kandidat 1 - calon ketua osis</p>
+
+        <p><b>Visi:</b><br>
+        “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
+        </p>
+
+        <p><b>Misi:</b></p>
+        <ol>
+          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
+          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
+          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+        </ol>
       </div>
 
     </div>
 
-    
+    <div class="buttons">
+      <button class="vote">✔ Voting</button>
+      <button class="back">↩ Kembali</button>
+    </div>
 
   </div>
 

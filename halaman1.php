@@ -58,7 +58,7 @@ body {
     width: 500px;
     position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    margin-right: -50px;
+    margin-left:100px;
 }
 
 /* icon user */
