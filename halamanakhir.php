@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sistem E-Voting OSIS</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-  background-image: url('BG.jpeg');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* posisi kotakan dalam */
+    overflow: hidden;
+    background-image: url('BG.jpeg');
 }
 
 .container{
@@ -23,19 +21,21 @@ body{
 }
 
 .sidebar{
-  width:150px;
+  width:140px;
   background:#4c6f7a;
   color:white;
-  padding:30px 20px;
+  padding:50px 20px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  margin-right: 843px;
 }
 
 .sidebar h2{
   text-align:center;
   font-size:20px;
   margin-bottom:40px;
+  margin-right: 10px;
 }
 
 .menu{
@@ -50,6 +50,12 @@ body{
   cursor:pointer;
 }
 
+.menu p{
+  padding:10px;
+  margin-bottom:5px;
+  border-radius:8px;
+  cursor:pointer;
+}
 .menu li:hover{
   background:rgba(255,255,255,0.25);
 }
@@ -63,91 +69,46 @@ body{
   cursor:pointer;
 }
 
-.main{
-  flex:1;
-  padding:40px;
-  color:white;
-}
-
-.main h1{
-  text-align:center;
-  margin-bottom:30px;
-}
-
 .boxdalam {
-    background-color: #a3c5ec; 
-    padding: 100px;
+    background-color: #a5c3e6; 
+    padding: 50px;
     border-radius: 20px;
     text-align: center;
     width: 500px;
-    position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-   margin-left:-500;
-}
-.text{
-  font-size:14px;
-  margin-bottom:15px;
-  color:#ddd;
+    margin-left:100px;
 }
 
-.buttons{
-  margin-top:25px;
-  display:flex;
-  justify-content:space-between;
+h2 {
+    color: #1a2a44;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
-.vote{
-  background:#7a8c92;
-  border:none;
-  padding:12px 30px;
-  border-radius:8px;
-  color:white;
-  cursor:pointer;
-}
-
-.back{
-  background:#7a8c92;
-  border:none;
-  padding:12px 30px;
-  border-radius:8px;
-  color:white;
-  cursor:pointer;
-}
-
-.vote:hover,
-.back:hover{
-  background:#5f737a;
+p {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
 </style>
 <body>
-<div class="container">
+  <div class="boxdalam">
+     <h2>Autentifikasi Gagal!</h2>
+            <p>NISN dan Kode salah!</p>
+</div>
+  <div class="container">
 
   <div class="sidebar">
     <h2>Sistem<br>E-Voting<br>Osis</h2>
 
     <ul class="menu">
       <li>Voting</li>
-      <li>Hasil Voting</li>
+      <p>Hasil Voting</p>
     </ul>
 
     <button class="logout">Log Out</button>
-  </div>
-
-  <div class="main">
-    <div class="boxdalam">
-      <div class="text">
-       <h2>Pilihan anda sudah kami simpan,
-Terima kasih sudah berpartisipasi 
-dalam voting ini.</h2>
-      </div>
-
-    </div>
-
-    
 
   </div>
-
-</div>
-
+  
 </body>
 </html>

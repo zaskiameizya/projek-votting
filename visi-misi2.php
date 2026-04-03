@@ -50,6 +50,13 @@ body{
   cursor:pointer;
 }
 
+.menu p{
+  padding:10px;
+  margin-bottom:5px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
 .menu li:hover{
   background:rgba(255,255,255,0.25);
 }
@@ -88,7 +95,7 @@ body{
 }
 
 .profile img{
-  width:120px;
+  width:130px;
   border-radius:10px;
   margin-bottom:10px;
 }
@@ -149,7 +156,7 @@ body{
 
     <ul class="menu">
       <li>Voting</li>
-      <li>Hasil Voting</li>
+      <p>Hasil Voting</p>
     </ul>
 
     <button class="logout">Log Out</button>
@@ -162,24 +169,24 @@ body{
     <div class="card">
 
       <div class="profile">
-        <img src="kandidat1.png" alt=>
-        <p class="name">Cantika Lestary</p>
-        <small>Kandidat 1 - Calon<br>Ketua OSIS</br></small>
+        <img src="alya-azzahra.png" alt=>
+        <p class="name">Alya Azzahra</p>
+        <small>Kandidat 2 - Calon<br>Ketua OSIS</br></small>
       </div>
 
       <div class="visi-misi">
-        <h2>Cantika Lestary</h2>
-        <p class="jabatan">Kandidat 1 - calon ketua osis</p>
+        <h2>Alya Azzahra</h2>
+        <p class="jabatan">Kandidat 2 - calon ketua osis</p>
 
         <p><b>Visi:</b><br>
-        “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
+        “Membangun Sekolah yang Ramah dan Inklusif”
         </p>
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
-          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
-          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+          <li>Meningkatkan kesadaran dan kepedulian siswa terhadap isu-isu sosial dan lingkungan.</li>
+          <li>Membangun lingkungan sekolah yang aman dan nyaman bagi semua siswa.</li>
+          <li>Meningkatkan partisipasi siswa dalam kegiatan sukarela dan bakti sosial.</li>
         </ol>
       </div>
 

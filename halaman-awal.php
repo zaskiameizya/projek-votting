@@ -49,7 +49,6 @@ body {
     
 }
 
-
 .boxdalam {
     background-color: #a5c3e6; 
     padding: 50px;

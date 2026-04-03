@@ -50,6 +50,13 @@ body{
   cursor:pointer;
 }
 
+.menu p{
+  padding:10px;
+  margin-bottom:5px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
 .menu li:hover{
   background:rgba(255,255,255,0.25);
 }
@@ -149,7 +156,7 @@ body{
 
     <ul class="menu">
       <li>Voting</li>
-      <li>Hasil Voting</li>
+      <p>Hasil Voting</p>
     </ul>
 
     <button class="logout">Log Out</button>
