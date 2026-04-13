@@ -41,8 +41,7 @@ body{
 .menu{
   list-style:none;
   width: 100%;
-  background: white:
-  text-align: center:
+  text-align: center;
   padding: 15px 0;
   margin: 0;
 }
@@ -84,9 +83,7 @@ body{
   padding:15px;
   font-size:35px;
   font-weight:bold;
-  width:100%;
-  margin:0;
-  border-radius:0;
+  margin-bottom:40px;
 }
 
 .cards{
@@ -99,12 +96,13 @@ body{
 
 .card{
   background:#e6e6e6;
-  width:300px;
+  width:600px;
   padding:25px;
   border-radius:25px;
   text-align:center;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
-  transition:0.3s;
+  min-height: 550px;
+  
 }
 
 .card img{
