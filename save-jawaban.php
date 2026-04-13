@@ -14,7 +14,7 @@
 }
 
 body{
-  background:#5e7c87;
+  background-image: url('BG.jpeg');
 }
 
 .container{
@@ -46,6 +46,13 @@ body{
   padding:10px;
   margin-bottom:5px;
   background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.menu p{
+  padding:10px;
+  margin-bottom:5px;
   border-radius:8px;
   cursor:pointer;
 }
@@ -88,7 +95,7 @@ body{
 }
 
 .profile img{
-  width:120px;
+  width:130px;
   border-radius:10px;
   margin-bottom:10px;
 }
@@ -149,7 +156,7 @@ body{
 
     <ul class="menu">
       <li>Voting</li>
-      <li>Hasil Voting</li>
+      <p>Hasil Voting</p>
     </ul>
 
     <button class="logout">Log Out</button>
@@ -162,24 +169,24 @@ body{
     <div class="card">
 
       <div class="profile">
-        <img src="kandidat1.png" alt=>
-        <p class="name">Cantika Lestary</p>
-        <small>Kandidat 1 - Calon<br>Ketua OSIS</br></small>
+        <img src="bayu-laksmana.png" alt=>
+        <p class="name">Bayu Leksmana</p>
+        <small>Kandidat 3 - Calon<br>Ketua OSIS</br></small>
       </div>
 
       <div class="visi-misi">
-        <h2>Cantika Lestary</h2>
-        <p class="jabatan">Kandidat 1 - calon ketua osis</p>
+        <h2>Bayu Leksmana</h2>
+        <p class="jabatan">Kandidat 3 - calon ketua osis</p>
 
         <p><b>Visi:</b><br>
-        “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
+        “Meningkatkan Kreativitas dan Inovasi Siswa”
         </p>
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
-          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
-          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+          <li>Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
+          <li>Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
+          <li>Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
         </ol>
       </div>
 
