@@ -40,6 +40,11 @@ body{
 
 .menu{
   list-style:none;
+  width: 100%;
+  background: white:
+  text-align: center:
+  padding: 15px 0;
+  margin: 0;
 }
 
 .menu li{
@@ -68,7 +73,9 @@ body{
 .main{
   flex:1;
   padding:30px;
-  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -84,18 +91,21 @@ body{
 /* Card kandidat */
 .cards{
   display:flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width:100px;
-  padding:0 40px;
+  justify-content:center;
+  gap:60px;
+  width:100%;
+  max-width: 1 100px;
+  margin:0 auto;
+  nargin-top: 20px
 }
 
 .card{
-  background:#ddd;
-  width:220px;
-  padding:20px;
-  border-radius:20px;
+  background:#e6e6e6;
+  width:280px;
+  padding:30px;
+  border-radius:25px;
   text-align:center;
+  box-shadow:0 10px 25px rbga(0,0,0,0.25);
 }
 
 .card h3{
@@ -104,11 +114,9 @@ body{
 
 /* Foto */
 .card img{
-  width:120px;
-  height:150px;
-  object-fit:cover;
-  border-radius:10px;
-  margin-bottom:15px;
+  width:150px;
+  height:auto;
+  margin: 15px 0;
 }
 
 /* Tombol */
