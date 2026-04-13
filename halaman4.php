@@ -73,9 +73,8 @@ body{
 .main{
   flex:1;
   padding:30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align:center;
+  margin-bottom: -30px;
 }
 
 
@@ -85,38 +84,37 @@ body{
   padding:15px;
   font-size:35px;
   font-weight:bold;
-  margin-bottom:40px;
+  width:100%;
+  margin:0;
+  border-radius:0;
 }
 
-/* Card kandidat */
 .cards{
   display:flex;
   justify-content:center;
-  gap:60px;
-  width:100%;
-  max-width: 1 100px;
-  margin:0 auto;
-  nargin-top: 20px
+  gap:100px;
+  max-width:1200px;
+  margin:200px;
 }
 
 .card{
   background:#e6e6e6;
-  width:280px;
-  padding:30px;
+  width:300px;
+  padding:25px;
   border-radius:25px;
   text-align:center;
-  box-shadow:0 10px 25px rbga(0,0,0,0.25);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  transition:0.3s;
+}
+
+.card img{
+  width:140px;
+  height:auto;
+  margin:15px 0;
 }
 
 .card h3{
-  margin-bottom:15px;
-}
-
-/* Foto */
-.card img{
-  width:150px;
-  height:auto;
-  margin: 15px 0;
+  margin-bottom:10px;
 }
 
 /* Tombol */
@@ -129,9 +127,7 @@ body{
   cursor:pointer;
 }
 
-.btn:hover{
-  background:#555;
-}
+
 
 </style>
 </head>
