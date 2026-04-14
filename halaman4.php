@@ -78,7 +78,6 @@ body{
   flex:1;
   padding:30px;
   text-align:center;
-  margin-bottom: -30px;
 }
 
 
@@ -96,7 +95,7 @@ body{
   justify-content:center;
   gap:100px;
   max-width:1200px;
-  margin:200px;
+  margin:0 auto;
 }
 
 .card{
