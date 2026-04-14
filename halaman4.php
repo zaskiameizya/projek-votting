@@ -106,13 +106,15 @@ body{
 }
 
 .card img{
-  width:140px;
-  height:auto;
+  width: 140px;
+  height: auto;
   margin:15px 0;
 }
 
 .card h3{
   margin-bottom:10px;
+  font-family: 'Inika', serif;
+  font-size: 32px;
 }
 
 /* Tombol */
@@ -120,8 +122,8 @@ body{
   background:#6d6d6d;
   color:white;
   border:none;
-  padding:10px 20px;
-  border-radius:10px;
+  padding: 10px 20px;
+  border-radius: 10px;
   cursor:pointer;
 }
 
