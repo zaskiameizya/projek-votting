@@ -14,6 +14,8 @@
 
 body{
   background: url('8c0eb8ec-b5a2-4955-b414-4ba47618232a.jpg');
+  baground-size: cover;
+  baground-position: center;
 }
 
 /* Layout utama */
