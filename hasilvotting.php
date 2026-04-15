@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inika';
         }
 
         body {
@@ -95,14 +95,32 @@
             font-size: 30px;
             font-family: 'Inika', serif;
             font-weight: bold;
+<<<<<<< HEAD
             background-color: #F6FFFC;
+=======
+            background-image: linear-gradient(to top, #007bff, #f8f5f5);
+>>>>>>> f7714b1f5f05d45ccb0081dd61f9f7aa79822107
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
+<<<<<<< HEAD
+            color: #2c3e50;
+        }
+
+        .main-content {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background:rgba(255,255,255,0.1);
+            padding: 15px;
+=======
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             background:rgba(255,255,255,0.1);
             padding: 15px;
             
+>>>>>>> 563233d9d8c6cca1cd2269f68454c833424765a7
         }
 
         .card-container {
@@ -130,11 +148,10 @@
         .photo-box {
             width: 100%;
             height: 280px;
-            background-color: #ecf0f1;
             margin-bottom: 20px;
             border-radius: 15px;
             overflow: hidden;
-            border: 2px solid #95a5a6;
+            
         }
 
         .photo-box img {
