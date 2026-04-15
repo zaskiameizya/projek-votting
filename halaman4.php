@@ -93,7 +93,7 @@ body{
 .cards{
   display:flex;
   justify-content:center;
-  gap:100px;
+  gap:30px;
   max-width:1200px;
   margin:0 auto;
 }
@@ -121,7 +121,7 @@ body{
   font-size: 32px;
 }
 
-/* Tombol */
+
 .btn{
   background:#6d6d6d;
   color:white;
