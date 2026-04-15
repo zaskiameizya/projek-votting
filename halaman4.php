@@ -159,7 +159,7 @@ body{
 
     <div class="cards">
 
-     
+
       <div class="card">
         <h3>Kandidat 1</h3>
         <img src="WhatsApp_image_2026-01-12_at_14.10.14-removebg-preview.png">
