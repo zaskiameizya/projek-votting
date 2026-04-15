@@ -23,8 +23,10 @@ body{
 }
 
 .sidebar{
+  font-family: 'Inika', serif;
   width:150px;
   background:#4c6f7a;
+  border-right: 1px solid black;
   color:white;
   padding:30px 20px;
   display:flex;
@@ -62,12 +64,16 @@ body{
 }
 
 .logout{
-  padding:10px;
-  border:none;
-  border-radius:8px;
-  background:#2c4f5a;
-  color:white;
-  cursor:pointer;
+  font-family: 'Inika', serif;
+  font-size: 15px;
+  display: block;
+  text-align: flex-start;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background: #2c4f5a;
+  color: white;
+  cursor: pointer;
 }
 
 .main{
@@ -158,8 +164,9 @@ body{
       <li>Voting</li>
       <p>Hasil Voting</p>
     </ul>
+    <span>Hi Alletta</span>
 
-    <button class="logout">Log Out</button>
+    <button class="logout">Log Out →</button>
   </div>
 
   <div class="main">

@@ -160,7 +160,7 @@ body{
 
       <div class="card">
         <h3>Kandidat 1</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.10.png">
+        <img src="cantika.png">
         <br>
         <button class="btn">Details</button>
       </div>
@@ -168,7 +168,7 @@ body{
       
       <div class="card">
         <h3>Kandidat 2</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.12.02.14-removebg-preview.png">
+        <img src="alya-azzahra.png">
         <br>
         <button class="btn">Details</button>
       </div>
@@ -176,7 +176,7 @@ body{
       
       <div class="card">
         <h3>Kandidat 3</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.15.09-removebg-preview.png">
+        <img src="bayu-laksmana.png">
         <br>
         <button class="btn">Details</button>
       </div>

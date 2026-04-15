@@ -159,7 +159,7 @@ body{
       <p>Hasil Voting</p>
     </ul>
 
-    <button class="logout">Log Out</button>
+    <button class="logout">Log Out →</button>
   </div>
 
   <div class="main">
