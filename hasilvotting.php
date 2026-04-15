@@ -95,7 +95,11 @@
             font-size: 30px;
             font-family: 'Inika', serif;
             font-weight: bold;
+<<<<<<< HEAD
+            background-color: #F6FFFC;
+=======
             text-align: center;
+>>>>>>> 273d45f4e2b2d966aa0632b201e7ac41102a0fae
             text-transform: uppercase;
             letter-spacing: 2px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
