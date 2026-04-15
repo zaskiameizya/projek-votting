@@ -170,7 +170,7 @@
         <div class="sidebar-footer">
             <div class="user-info">Hi Alletta</div>
             <button class="btn-logout">
-                Log Out <i class="fas fa-sign-out-alt"></i>
+                Log Out → <i class="fas fa-sign-out-alt"></i>
             </button>
         </div>
     </div>

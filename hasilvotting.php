@@ -49,7 +49,9 @@
 
         .nav-links .active {
             font-weight: bold;
-            color: #ecf0f1;
+            color: #f2f4f5;
+            background:rgba(255,255,255,0.1);
+            border-radius: 15px;
         }
 
         .user-info {
@@ -76,6 +78,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            
         }
 
         .title {
