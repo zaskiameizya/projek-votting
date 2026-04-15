@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Sistem E-Voting OSIS</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+
 <style>
 *{
   margin:0;
@@ -15,7 +14,6 @@
 
 body{
   background-image: url('BG.jpeg');
-  font-family: 'Inika', serif;
 }
 
 .container{
@@ -24,10 +22,8 @@ body{
 }
 
 .sidebar{
-  font-family: 'Inika', serif;
   width:150px;
   background:#4c6f7a;
-  border-right: 1px solid black;
   color:white;
   padding:30px 20px;
   display:flex;
@@ -65,16 +61,12 @@ body{
 }
 
 .logout{
-  font-family: 'Inika', serif;
-  font-size: 15px;
-  display: block;
-  text-align: flex-start;
-  width: 100px;
-  height: 30px;
-  border-radius: 20px;
-  background: #2c4f5a;
-  color: white;
-  cursor: pointer;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#2c4f5a;
+  color:white;
+  cursor:pointer;
 }
 
 .main{
@@ -90,12 +82,11 @@ body{
 
 .card{
   display:flex;
-  background:rgba(255,255,255,0.15);
+  background: #A3B8B1;
   padding:25px;
   border-radius:12px;
   backdrop-filter: blur(5px);
 }
-
 .profile{
   width:200px;
   text-align:center;
@@ -105,16 +96,13 @@ body{
   width:130px;
   border-radius:10px;
   margin-bottom:10px;
+  background:white; 
+  padding:5px; 
 }
 
 .profile .name{
   font-weight:bold;
 }
-
-.visi{
-  margin-:30px;
-}
-
 
 .visi-misi .jabatan{
   font-size:14px;
@@ -154,7 +142,54 @@ body{
 .back:hover{
   background:#5f737a;
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #6f8c9c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+}
+
+.modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-simpan {
+  background: #2c3e50;
+  color: white;
+}
+
+.btn-batal {
+  background: #34495e;
+  color: white;
+}
 </style>
+</head>
+
 <body>
 <div class="container">
 
@@ -165,9 +200,8 @@ body{
       <li>Voting</li>
       <p>Hasil Voting</p>
     </ul>
-    <span>Hi Alletta</span>
 
-    <button class="logout">Log Out →</button>
+    <button class="logout">Log Out</button>
   </div>
 
   <div class="main">
@@ -177,37 +211,60 @@ body{
     <div class="card">
 
       <div class="profile">
-        <img src="cantika.png" alt=>
-        <p class="name">Cantika Lestary</p>
-        <small>Kandidat 2 - Calon<br>Ketua OSIS</br></small>
+        <img src="alya-azzahra.png" alt="">
+        <p class="name">Alya Azzahra</p>
+        <small>Kandidat 2 - Calon<br>Ketua OSIS</small>
       </div>
 
       <div class="visi-misi">
-        <h2>Cantika Lestary</h2>
+        <h2>Alya Azzahra</h2>
         <p class="jabatan">Kandidat 2 - calon ketua osis</p>
 
         <p><b>Visi:</b><br>
-        “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
+        “Membangun Sekolah yang Ramah dan Inklusif”
         </p>
 
         <p><b>Misi:</b></p>
         <ol>
-          <li> Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
-          <li>MMeningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
-          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+          <li>Meningkatkan kesadaran dan kepedulian siswa terhadap isu-isu sosial dan lingkungan.</li>
+          <li>Membangun lingkungan sekolah yang aman dan nyaman bagi semua siswa.</li>
+          <li>Meningkatkan partisipasi siswa dalam kegiatan sukarela dan bakti sosial.</li>
         </ol>
       </div>
 
     </div>
 
     <div class="buttons">
-      <button class="vote">✔ Voting</button>
+      <button class="vote" onclick="bukaModal()">✔ Voting</button>
       <button class="back">↩ Kembali</button>
     </div>
 
   </div>
 
 </div>
+
+<div class="overlay" id="modalBox">
+  <div class="modal">
+    <p>
+      <b>Yakin dengan pilihan anda?</b><br><br>
+      Setelah klik “Simpan”,<br>
+      pilihan anda tidak dapat di ubah.
+    </p>
+
+    <button class="btn-simpan">SIMPAN</button>
+    <button class="btn-batal" onclick="tutupModal()">BATAL</button>
+  </div>
+</div>
+
+<script>
+function bukaModal() {
+  document.getElementById("modalBox").style.display = "flex";
+}
+
+function tutupModal() {
+  document.getElementById("modalBox").style.display = "none";
+}
+</script>
 
 </body>
 </html>

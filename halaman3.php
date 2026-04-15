@@ -10,12 +10,11 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inika', 'Abril Fatface', sans-serif;
 }
 
 body{
   background-image: url('BG.jpeg');
-  font-family: 'Inika', serif;
 }
 
 .container{
@@ -24,20 +23,19 @@ body{
 }
 
 .sidebar{
-  font-family: 'Inika', serif;
   width:150px;
   background:#4c6f7a;
-  border-right: 1px solid black;
+   border-right: 2px solid black;
   color:white;
   padding:30px 20px;
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
 }
 
 .sidebar h2{
   text-align:center;
-  font-size:20px;
+  font-size: 24px;
+  font-family: 'Inika';
   margin-bottom:40px;
 }
 
@@ -49,14 +47,6 @@ body{
   padding:10px;
   margin-bottom:5px;
   background:rgba(255,255,255,0.1);
-  border-radius:8px;
-  cursor:pointer;
-}
-
-.menu p{
-  padding:10px;
-  margin-bottom:5px;
-  border-radius:8px;
   cursor:pointer;
 }
 
@@ -64,17 +54,15 @@ body{
   background:rgba(255,255,255,0.25);
 }
 
-.logout{
-  font-family: 'Inika', serif;
-  font-size: 15px;
-  display: block;
-  text-align: flex-start;
-  width: 100px;
-  height: 30px;
-  border-radius: 20px;
-  background: #2c4f5a;
-  color: white;
-  cursor: pointer;
+.lg{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#2c4f5a;
+  color:white;
+  cursor:pointer;
+  display:flex;
+  justify-content: flex-end;
 }
 
 .main{
@@ -86,50 +74,71 @@ body{
 .main h1{
   text-align:center;
   margin-bottom:30px;
+  font-family: 'Abril Fatface';
+  font-size: 64px;
 }
 
 .card{
   display:flex;
-  background:rgba(255,255,255,0.15);
+  background: #A3B8B1;
   padding:25px;
-  border-radius:12px;
+  border-radius: 10px;
   backdrop-filter: blur(5px);
+  height: 400px;
 }
-
+.box-profile{
+  background-color: #ffff;
+  border-radius: 5px;
+  height: 300px;
+}
 .profile{
-  width:200px;
+  width: 150px;
   text-align:center;
+  margin-left: 20px;
+  margin-top: 18px;
 }
 
 .profile img{
-  width:130px;
+  width: 80px;
   border-radius:10px;
+  margin-top: 25px;
   margin-bottom:10px;
 }
 
 .profile .name{
   font-weight:bold;
+  color: black;
+  font-family: 'Inika', serif;
+  margin-bottom: 5px;
+}
+
+.kandidat{
+  color: black;
+  font-family: 'Inika', serif;
 }
 
 .visi{
-  margin-:30px;
+  margin:30px;
 }
-
 
 .visi-misi .jabatan{
   font-size:14px;
-  margin-bottom:15px;
-  color:#ddd;
+  color: black;
 }
 
+.visi-misi {
+  margin-left: 50px;
+  font-family: 'Inika';
+  margin-bottom: 0px;
+}  
 .visi-misi ol{
-  margin-left:20px;
+  margin-left: 55px
 }
 
 .buttons{
   margin-top:25px;
   display:flex;
-  justify-content:space-between;
+  justify-content:space-between
 }
 
 .vote{
@@ -155,6 +164,7 @@ body{
   background:#5f737a;
 }
 </style>
+
 <body>
 <div class="container">
 
@@ -163,11 +173,10 @@ body{
 
     <ul class="menu">
       <li>Voting</li>
-      <p>Hasil Voting</p>
+      <li>Hasil Voting</li>
     </ul>
-    <span>Hi Alletta</span>
-
-    <button class="logout">Log Out →</button>
+     
+    <li>"logout">Log Out</li>
   </div>
 
   <div class="main">
@@ -177,14 +186,18 @@ body{
     <div class="card">
 
       <div class="profile">
-        <img src="cantika.png" alt=>
-        <p class="name">Cantika Lestary</p>
-        <small>Kandidat 2 - Calon<br>Ketua OSIS</br></small>
+        <div class="box-profile">
+            <img src="kandidat1.png" alt=>
+            <p class="name">Cantika Lestary</p>
+            <small class="kandidat">Kandidat 1 - Calon<br>Ketua OSIS</br></small>
+        </div>
       </div>
 
       <div class="visi-misi">
-        <h2>Cantika Lestary</h2>
-        <p class="jabatan">Kandidat 2 - calon ketua osis</p>
+          <h2 style="color: black;" >Cantika Lestary</h2>
+          <p class="jabatan">Kandidat 1 - calon ketua osis</p>
+
+        <hr>
 
         <p><b>Visi:</b><br>
         “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
@@ -192,11 +205,13 @@ body{
 
         <p><b>Misi:</b></p>
         <ol>
-          <li> Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
-          <li>MMeningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
+          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
+          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
           <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
         </ol>
       </div>
+
+      
 
     </div>
 

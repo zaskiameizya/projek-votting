@@ -112,12 +112,22 @@
             padding: 15px;
         }
 
+<<<<<<< HEAD
         .card-container {
             display: flex;
             gap: 25px;
             justify-content: center;
             flex-wrap: wrap; 
         }
+=======
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  max-width:1200px;
+  margin:0 auto;
+}
+>>>>>>> db436325785952c04812e6982f8f56c53f8dbc91
 
         .card {
             background-color: #bdc3c7;
@@ -143,12 +153,20 @@
             overflow: hidden;
             border: 2px solid #95a5a6;
         }
-
         .photo-box img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
+          }
+
+.btn{
+  background:#6d6d6d;
+  color:white;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor:pointer;
+}
 
         .result-label, .percentage-label {
             background-color: #34495e;
