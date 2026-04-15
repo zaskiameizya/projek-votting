@@ -15,6 +15,7 @@
 
 body{
   background-image: url('BG.jpeg');
+  font-family: 'Inika', serif;
 }
 
 .container{
