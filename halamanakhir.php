@@ -28,7 +28,7 @@ body {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  margin-right: 843px;
+  margin-right:100px;
 }
 
 .sidebar h2{
@@ -76,7 +76,8 @@ body {
     text-align: center;
     width: 500px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    margin-left:100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 h2 {
