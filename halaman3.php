@@ -198,6 +198,7 @@ body{
           <p class="jabatan">Kandidat 1 - calon ketua osis</p>
 
         <hr>
+      </div>
 
         <p><b>Visi:</b><br>
         “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
