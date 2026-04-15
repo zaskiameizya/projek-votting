@@ -44,6 +44,7 @@
             padding: 15px 0;
             cursor: pointer;
             font-size: 14px;
+            
         }
 
         .nav-links .active {
@@ -99,7 +100,7 @@
             background-color: #bdc3c7;
             border-radius: 25px;
             padding: 20px;
-            width: 270px;
+            width: 240px;
             color: #2c3e50;
             text-align: center;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
