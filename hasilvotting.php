@@ -86,7 +86,6 @@
             font-family: 'Inika', serif;
             font-weight: bold;
             background-color: #F6FFFC;
-            
             text-transform: uppercase;
             margin-bottom: 40px;
             letter-spacing: 2px;
