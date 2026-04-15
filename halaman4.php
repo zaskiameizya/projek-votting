@@ -9,7 +9,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Abril Fatface, inika, sans-serif;
 }
 
 body{
@@ -89,7 +89,6 @@ body{
   font-weight:bold;
   margin-bottom:40px;
 }
-
 .cards{
   display:flex;
   justify-content:center;
@@ -159,10 +158,9 @@ body{
 
     <div class="cards">
 
-     
       <div class="card">
         <h3>Kandidat 1</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.10.14-removebg-preview.png">
+        <img src="WhatsApp_image_2026-01-12_at_14.10.png">
         <br>
         <button class="btn">Details</button>
       </div>
@@ -170,7 +168,7 @@ body{
       
       <div class="card">
         <h3>Kandidat 2</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.12.02-removebg-preview.png">
+        <img src="WhatsApp_image_2026-01-12_at_14.12.02.14-removebg-preview.png">
         <br>
         <button class="btn">Details</button>
       </div>
