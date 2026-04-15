@@ -1,140 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"rel="stylesheet">
-    <link rel="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"/>
-    <style>
-      body {
-      margin: 0;
-      font-family: Arial;
-      background-color: #3f6b6f;
-      }
-    
-      .container {
-      display: flex;
-      height: 100vh;
-      }
+<meta charset="UTF-8">
+<title>Daftar Kandidat</title>
 
-      .sidebar{
-      width: 220px;
-      background-color: #2f575c;
-      color: white;
-      padding: 25px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-      .sidebar h2{
-      text-align:
-      }
-    
-      .menu{
-      list-style: none;
-      padding: 0;
-      margin-top: 30px;
-      }
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100pv;
+  everflow:hidden;
+  background: url('8c0eb8ec-b5a2-4955-b414-4ba47618232a.jpg');
+}
 
-      .menu li{
-      margin: 15px 0;
-      font-size: 16px;
-      cursor: pointer;
-      }
+/* Layout utama */
+.container{
+  display:flex;
+  height:100vh;
+}
 
-      .user{
-      text-align: center;
-      }
- 
-      .user button{
-      background-color: black;
-      color: white;
-      border: none;
-      padding: 8px 20px;
-      border-radius: 20px;
-      }
+/* Sidebar */
+.sidebar{
+  width:200px;
+  background:#4c6f7a;
+  color:white;
+  padding:30px 15px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
 
-      .content{
-      flex: 1;
-      padding: 40px;
-      }
+.sidebar h2{
+  text-align:center;
+  line-height:1.5;
+}
 
-      .judul{
-      background-color: #d9d9d9;
-      text-align: center;
-      padding: 10px;
-      margin-bottom: 50px;
-      }
+.menu{
+  list-style:none;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
 
-      .kandidat{
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      }
+.menu li{
+  padding:12px;
+  margin:8px 0;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  cursor:pointer;
+  text-align:center;
+}
 
-      .cardkandidat{
-      background-color: #f2d4bf;
-      width: 180px;
-      padding: 20px;
-      border-radius: 20px;
-      text-align: center;
-      }
+.menu li:hover{
+  background:rgba(255,255,255,0.3);
+}
 
-      .fotobulat{
-      width: 120px;
-      height: 120px;
-      border-radius: 60px;
-      margin: 10px 0;
-      }
+.logout{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#2c4f5a;
+  color:white;
+  cursor:pointer;
+}
 
-      .cardbutton{
-      background-color: #444;
-      color: white;
-      border: none;
-      padding: 8px 25px;
-      border-radius: 10px;
-      cursor: pointer;
-      }
+/* Main */
+.main{
+  flex:1;
+  padding:30px;
+  text-align:center;
+}
+
+
+/* Judul */
+.title{
+  background:linear-gradient(to right,#cfd8dc,#90a4ae);
+  padding:15px;
+  font-size:35px;
+  font-weight:bold;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:100px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.card{
+  background:#e6e6e6;
+  width:300px;
+  padding:25px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  min-height: 400px;
+  
+}
+
+.card img{
+  width: 140px;
+  height: auto;
+  margin:15px 0;
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-family: 'Inika', serif;
+  font-size: 32px;
+}
+
+/* Tombol */
+.btn{
+  background:#6d6d6d;
+  color:white;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+
+
 </style>
 </head>
+
 <body>
-   <div class="container">
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
     <h2>Sistem<br>E-Voting<br>Osis</h2>
 
     <ul class="menu">
-        <li>Voting</li>
-        <li>Hasil Voting</li>
+      <li>Voting</li>
+      <li>Hasil Voting</li>
     </ul>
 
-    <div class="user">
-        <p>HI Alleta</p>
-        <button>Log out</button>
-    </div>
+    <button class="logout">Log Out</button>
+  </div>
 
-    <div class="content">
-        <div class="judul">
-            <h1>DAFTAR KANDIDAT</h1>
-    </div>
+  <!-- Main -->
+  <div class="main">
 
-    <div class="card">
+    <div class="title">DAFTAR KANDIDAT</div>
+
+    <div class="cards">
+
+
+      <div class="card">
         <h3>Kandidat 1</h3>
         <img src="WhatsApp_image_2026-01-12_at_14.10.14-removebg-preview.png">
-        <button>Details</button>
-    </div>
+        <br>
+        <button class="btn">Details</button>
+      </div>
 
-    <div class="card">
+      
+      <div class="card">
         <h3>Kandidat 2</h3>
         <img src="WhatsApp_image_2026-01-12_at_14.12.02-removebg-preview.png">
-        <button>Details</button>
-    </div>
+        <br>
+        <button class="btn">Details</button>
+      </div>
 
-    <div class="card">
+      
+      <div class="card">
         <h3>Kandidat 3</h3>
         <img src="WhatsApp_image_2026-01-12_at_14.15.09-removebg-preview.png">
-        <button>Details</button>
+        <br>
+        <button class="btn">Details</button>
+      </div>
+
     </div>
+
+  </div>
+
 </div>
+
 </body>
 </html>

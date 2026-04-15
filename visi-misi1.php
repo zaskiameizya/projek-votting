@@ -10,7 +10,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Inika', 'Abril Fatface', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -23,19 +23,20 @@ body{
 }
 
 .sidebar{
+  font-family: 'Inika', serif;
   width:150px;
   background:#4c6f7a;
-   border-right: 2px solid black;
+  border-right: 1px solid black;
   color:white;
   padding:30px 20px;
   display:flex;
   flex-direction:column;
+  justify-content:space-between;
 }
 
 .sidebar h2{
   text-align:center;
-  font-size: 24px;
-  font-family: 'Inika';
+  font-size:20px;
   margin-bottom:40px;
 }
 
@@ -47,6 +48,7 @@ body{
   padding:10px;
   margin-bottom:5px;
   background:rgba(255,255,255,0.1);
+  border-radius:8px;
   cursor:pointer;
 }
 
@@ -61,15 +63,17 @@ body{
   background:rgba(255,255,255,0.25);
 }
 
-.lg{
-  padding:10px;
-  border:none;
-  border-radius:8px;
-  background:#2c4f5a;
-  color:white;
-  cursor:pointer;
-  display:flex;
-  justify-content: flex-end;
+.logout{
+  font-family: 'Inika', serif;
+  font-size: 15px;
+  display: block;
+  text-align: flex-start;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background: #2c4f5a;
+  color: white;
+  cursor: pointer;
 }
 
 .main{
@@ -81,71 +85,50 @@ body{
 .main h1{
   text-align:center;
   margin-bottom:30px;
-  font-family: 'Abril Fatface';
-  font-size: 64px;
 }
 
 .card{
   display:flex;
-  background: #A3B8B1;
+  background:rgba(255,255,255,0.15);
   padding:25px;
-  border-radius: 10px;
+  border-radius:12px;
   backdrop-filter: blur(5px);
-  height: 450px;
 }
-.box-profile{
-  background-color: #ffff;
-  border-radius: 5px;
-  height: 300px;
-}
+
 .profile{
-  width: 150px;
+  width:200px;
   text-align:center;
-  margin-left: 20px;
-  margin-top: 18px;
 }
 
 .profile img{
-  width: 80px;
+  width:130px;
   border-radius:10px;
-  margin-top: 25px;
   margin-bottom:10px;
 }
 
 .profile .name{
   font-weight:bold;
-  color: black;
-  font-family: 'Inika', serif;
-  margin-bottom: 5px;
-}
-
-.kandidat{
-  color: black;
-  font-family: 'Inika', serif;
 }
 
 .visi{
-  margin:30px;
+  margin-:30px;
 }
+
 
 .visi-misi .jabatan{
   font-size:14px;
-  color: black;
+  margin-bottom:15px;
+  color:#ddd;
 }
 
-.visi-misi {
-  margin-left: 50px;
-  font-family: 'Inika';
-  margin-bottom: 0px;
-}  
 .visi-misi ol{
-  margin-left: 55px
+  margin-left:20px;
 }
 
 .buttons{
   margin-top:25px;
   display:flex;
-  justify-content:space-between
+  justify-content:space-between;
 }
 
 .vote{
@@ -171,7 +154,6 @@ body{
   background:#5f737a;
 }
 </style>
-
 <body>
 <div class="container">
 
@@ -182,8 +164,9 @@ body{
       <li>Voting</li>
       <p>Hasil Voting</p>
     </ul>
-     
-    <li>"logout">Log Out</li>
+    <span>Hi Alletta</span>
+
+    <button class="logout">Log Out →</button>
   </div>
 
   <div class="main">
@@ -193,18 +176,14 @@ body{
     <div class="card">
 
       <div class="profile">
-        <div class="box-profile">
-            <img src="kandidat1.png" alt=>
-            <p class="name">Cantika Lestary</p>
-            <small class="kandidat">Kandidat 1 - Calon<br>Ketua OSIS</br></small>
-        </div>
+        <img src="cantika.png" alt=>
+        <p class="name">Cantika Lestary</p>
+        <small>Kandidat 2 - Calon<br>Ketua OSIS</br></small>
       </div>
 
       <div class="visi-misi">
-          <h2 style="color: black;" >Cantika Lestary</h2>
-          <p class="jabatan">Kandidat 1 - calon ketua osis</p>
-
-        <hr>
+        <h2>Cantika Lestary</h2>
+        <p class="jabatan">Kandidat 2 - calon ketua osis</p>
 
         <p><b>Visi:</b><br>
         “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”
@@ -212,13 +191,11 @@ body{
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
-          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
+          <li> Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler dan organisasi sekolah.</li>
+          <li>MMeningkatkan prestasi akademik dan non-akademik siswa melalui program bimbingan dan pelatihan.</li>
           <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
         </ol>
       </div>
-
-      
 
     </div>
 
