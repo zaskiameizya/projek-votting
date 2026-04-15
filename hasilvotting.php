@@ -98,6 +98,7 @@
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
+<<<<<<< HEAD
             color: #2c3e50;
         }
 
@@ -106,6 +107,12 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
+=======
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background:rgba(255,255,255,0.1);
+            padding: 15px;
+            
+>>>>>>> 282158bb01bb218c6d5b15ce0d8f09953b02d33e
         }
 
         .card-container {
