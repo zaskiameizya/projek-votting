@@ -95,6 +95,7 @@
             font-size: 30px;
             font-family: 'Inika', serif;
             font-weight: bold;
+            background-color: #F6FFFC;
             background-image: linear-gradient(to top, #007bff, #f8f5f5);
             text-align: center;
             text-transform: uppercase;
