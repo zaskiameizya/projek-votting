@@ -95,11 +95,11 @@
             font-size: 30px;
             font-family: 'Inika', serif;
             font-weight: bold;
+            background-color: #F6FFFC;
             background-image: linear-gradient(to top, #007bff, #f8f5f5);
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
-<<<<<<< HEAD
             color: #2c3e50;
         }
 
@@ -111,12 +111,9 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             background:rgba(255,255,255,0.1);
             padding: 15px;
-=======
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             background:rgba(255,255,255,0.1);
             padding: 15px;
-            
->>>>>>> 563233d9d8c6cca1cd2269f68454c833424765a7
         }
 
         .card-container {
@@ -156,7 +153,7 @@
             object-fit: cover;
         }
 
-        .result-label, .percentage-label {
+        .hasil, .percentage-label {
             background-color: #34495e;
             color: white;
             padding: 10px;
@@ -193,7 +190,7 @@
                     <div class="photo-box">
                         <img src="cantika.png" alt="Kandidat 1">
                     </div>
-                    <div class="result-label">0 orang</div>
+                    <div class="hasil">0 orang</div>
                     <div class="percentage-label">0%</div>
                 </div>
 
@@ -203,7 +200,7 @@
                     <div class="photo-box">
                         <img src="alya-azzahra.png" alt="Kandidat 2">
                     </div>
-                    <div class="result-label">0 orang</div>
+                    <div class="hasil">0 orang</div>
                     <div class="percentage-label">0%</div>
                 </div>
 
@@ -213,7 +210,7 @@
                     <div class="photo-box">
                         <img src="bayu-laksmana.png" alt="Kandidat 3">
                     </div>
-                    <div class="result-label">0 orang</div>
+                    <div class="hasil">0 orang</div>
                     <div class="percentage-label">0%</div>
                 </div>
             </div>
