@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inika';
+            font-family:  'Inika', serif;
         }
 
         body {
@@ -108,7 +108,6 @@
             justify-content: center;
             align-items: flex-start;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            background:rgba(255,255,255,0.1);
             padding: 15px;
         }
 
@@ -137,11 +136,9 @@
         .photo-box {
             width: 100%;
             height: 280px;
-            background-color: #ecf0f1;
             margin-bottom: 20px;
             border-radius: 15px;
             overflow: hidden;
-            border: 2px solid #95a5a6;
         }
 
         .photo-box img {
@@ -151,11 +148,11 @@
         }
 
         .result-label, .percentage-label {
-            background-color: #34495e;
+            background-color: #686D6A;
             color: white;
             padding: 10px;
-            border-radius: 15px;
-            margin-bottom: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
     </style>
@@ -166,7 +163,7 @@
         <h2>Sistem<br>E-Voting<br>Osis</h2>
         <div class="nav-links">
             <div>Voting</div>
-            <div class="active">Hasil Voting</div>
+            <div class="active">Hasil Votting</div>
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
@@ -176,7 +173,7 @@
 
     <div class="main-wrapper">
         <header class="header-title">
-            <h1 class="title">HASIL VOTING</h1>
+            <h1 class="title">DAFTAR KANDIDAT</h1>
         </header>
 
         <main class="main-content">
@@ -187,8 +184,8 @@
                     <div class="photo-box">
                         <img src="cantika.png" alt="Kandidat 1">
                     </div>
-                    <div class="result-label">0 orang</div>
-                    <div class="percentage-label">0%</div>
+                    <div class="result-label">Details</div>
+                   
                 </div>
 
               
@@ -197,8 +194,8 @@
                     <div class="photo-box">
                         <img src="alya-azzahra.png" alt="Kandidat 2">
                     </div>
-                    <div class="result-label">0 orang</div>
-                    <div class="percentage-label">0%</div>
+                    <div class="result-label">Details</div>
+                    
                 </div>
 
               
@@ -207,8 +204,8 @@
                     <div class="photo-box">
                         <img src="bayu-laksmana.png" alt="Kandidat 3">
                     </div>
-                    <div class="result-label">0 orang</div>
-                    <div class="percentage-label">0%</div>
+                    <div class="result-label">Details</div>
+                    
                 </div>
             </div>
         </main>
