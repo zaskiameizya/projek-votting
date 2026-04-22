@@ -101,7 +101,7 @@
     /* CARD: Posisi dan Bentuk Tetap Sama */
     .card{
       display:flex;
-      background:rgba(255,255,255,0.15);
+      background: #A3B8B1;
       padding:25px;
       border-radius:12px;
       backdrop-filter: blur(5px);
@@ -123,13 +123,13 @@
     }
 
     .visi-misi {
-      margin-left:30px; /* Perbaikan dari margin-:30px sebelumnya */
+      margin-left:30px; 
     }
 
     .visi-misi .jabatan{
       font-size:14px;
       margin-bottom:15px;
-      color:#ddd;
+      color: black;
     }
 
     .visi-misi ol{
@@ -166,6 +166,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <div class="container">
@@ -198,8 +199,10 @@
       </div>
 
       <div class="visi-misi">
-        <h2>Cantika Lestary</h2>
-        <p class="jabatan">Kandidat 1 - calon ketua osis</p>
+          <h2 style="color: black;" >Cantika Lestary</h2>
+          <p class="jabatan">Kandidat 1 - calon ketua osis</p>
+
+        <hr>
 
         <p><b>Visi:</b><br>
         “Meningkatkan Partisipasi Siswa dan Mewujudkan Sekolah yang Berprestasi”

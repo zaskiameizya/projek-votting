@@ -101,7 +101,7 @@
     /* CARD: Posisi dan Bentuk Tetap Sama */
     .card{
       display:flex;
-      background:rgba(255,255,255,0.15);
+      background: #A3B8B1;
       padding:25px;
       border-radius:12px;
       backdrop-filter: blur(5px);
