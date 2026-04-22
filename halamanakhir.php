@@ -6,7 +6,9 @@
     <title>Sistem E-Voting OSIS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
+        * 
+<style>
+        {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -17,9 +19,14 @@
             display: flex;
             height: 100vh;
             background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('BG.jpeg');
         }
 
-        
         .sidebar {
             width: 150px;
             background-color: #4c6f7a; 
@@ -87,7 +94,6 @@
             align-items: center;
         }
 
-        /* --- MAIN CONTENT --- */
         .main-content {
             flex-grow: 1;
             background-image: url('BG.jpeg');
@@ -152,99 +158,85 @@
             z-index: 2;
             margin-bottom: -25px;
         }
+         .container{
+            display:flex;
+            height:100vh;
+        }
 
-    </style>
-</head>
-<<<<<<< HEAD
-<style>
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* posisi kotakan dalam */
-    overflow: hidden;
-    background-image: url('BG.jpeg');
-}
+         .sidebar{
+            font-family: 'Inika', serif;
+            width:150px;
+            background:#4c6f7a;
+            border-right: 1px solid black;
+            color:white;
+            padding:30px 20px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between; /* Menjaga jarak konten atas dan bawah */
+        }
 
-.container{
-  display:flex;
-  height:100vh;
-}
+         .sidebar h2{
+            text-align:center;
+            font-size:20px;
+            margin-bottom:40px;
+            margin-right: 10px;
+        }
 
-.sidebar{
-  width:140px;
-  background:#4c6f7a;
-  color:white;
-  padding:50px 20px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  margin-right:100px;
-}
+         .menu{
+            list-style:none;
+        }
 
-.sidebar h2{
-  text-align:center;
-  font-size:20px;
-  margin-bottom:40px;
-  margin-right: 10px;
-}
+         .menu li{
+            padding:10px;
+            margin-bottom:5px;
+            background:rgba(255,255,255,0.1);
+            border-radius:8px;
+            cursor:pointer;
+        }
 
-.menu{
-  list-style:none;
-}
+         .menu p{
+            padding:10px;
+            margin-bottom:5px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+         .menu li:hover{
+            background:rgba(255,255,255,0.25);
+        }
 
-.menu li{
-  padding:10px;
-  margin-bottom:5px;
-  background:rgba(255,255,255,0.1);
-  border-radius:8px;
-  cursor:pointer;
-}
+         .logout{
+            padding:10px;
+            border:none;
+            border-radius:8px;
+            background:#2c4f5a;
+            color:white;
+            cursor:pointer;
+        }
 
-.menu p{
-  padding:10px;
-  margin-bottom:5px;
-  border-radius:8px;
-  cursor:pointer;
-}
-.menu li:hover{
-  background:rgba(255,255,255,0.25);
-}
+         .boxdalam {
+            background-color: #a5c3e6; 
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-left: 100px;
+            margin-right: 100px;
+        }
 
-.logout{
-  padding:10px;
-  border:none;
-  border-radius:8px;
-  background:#2c4f5a;
-  color:white;
-  cursor:pointer;
-}
+         h2 {
+            color: #1a2a44;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
 
-.boxdalam {
-    background-color: #a5c3e6; 
-    padding: 50px;
-    border-radius: 20px;
-    text-align: center;
-    width: 500px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-h2 {
-    color: #1a2a44;
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-p {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
+         p {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
 </style>
-=======
->>>>>>> c960b7a8c8ae03878b92b7e42fa4cd6217a36f9a
+
 <body>
 
     <div class="sidebar">

@@ -1,193 +1,218 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Daftar Kandidat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Voting - E-Voting Osis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inika';
+        }
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+        body {
+            display: flex;
+            height: 100vh; 
+            background-image: url('BG.jpeg');
+            background-size: cover;
+            color: white;
+            overflow: hidden;
+        }
 
-body{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100pv;
-  everflow:hidden;
-  background: url('8c0eb8ec-b5a2-4955-b414-4ba47618232a.jpg');
-}
+      
+        .sidebar {
+            width: 180px; 
+            background-color: #4c6f7a;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #2c3e50;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
 
-/* Layout utama */
-.container{
-  display:flex;
-  height:100vh;
-}
+        .sidebar h2 {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 50px;
+            line-height: 1.4;
+            font-family: 'Inika', serif;
+        }
 
-/* Sidebar */
-.sidebar{
-  width:200px;
-  background:#4c6f7a;
-  color:white;
-  padding:30px 15px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
+        .nav-links {
+            flex-grow: 1;
+        }
 
-.sidebar h2{
-  text-align:center;
-  line-height:1.5;
-}
+        .nav-links div {
+            padding: 15px 15px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
 
-.menu{
-  list-style:none;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  margin: 0;
-}
+        .nav-links .active {
+            font-weight: bold;
+            color: #f2f4f5;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+        }
 
-.menu li{
-  padding:12px;
-  margin:8px 0;
-  background:rgba(255,255,255,0.1);
-  border-radius:8px;
-  cursor:pointer;
-  text-align:center;
-}
+        .user-info {
+            font-size: 14px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
 
-.menu li:hover{
-  background:rgba(255,255,255,0.3);
-}
+        .logout-btn {
+            margin-top: 10px;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            display: inline-block;
+        }
 
-.logout{
-  padding:10px;
-  border:none;
-  border-radius:8px;
-  background:#2c4f5a;
-  color:white;
-  cursor:pointer;
-}
+        .main-wrapper {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
 
-/* Main */
-.main{
-  flex:1;
-  padding:30px;
-  text-align:center;
-}
+        .header-title {
+            width: 100%;
+            background-color: #F6FFFC;
+            padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
 
+        .title {
+            font-size: 30px;
+            font-family: 'Inika', serif;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #007bff, #e0e0e0);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #2c3e50;
+        }
 
-/* Judul */
-.title{
-  background:linear-gradient(to right,#cfd8dc,#90a4ae);
-  padding:15px;
-  font-size:35px;
-  font-weight:bold;
-  margin-bottom:40px;
-}
+        .main-content {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background:rgba(255,255,255,0.1);
+            padding: 15px;
+        }
 
-.cards{
-  display:flex;
-  justify-content:center;
-  gap:100px;
-  max-width:1200px;
-  margin:0 auto;
-}
+        .card-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
 
-.card{
-  background:#e6e6e6;
-  width:300px;
-  padding:25px;
-  border-radius:25px;
-  text-align:center;
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
-  min-height: 400px;
-  
-}
+        .card {
+            background-color: #bdc3c7;
+            border-radius: 25px;
+            padding: 20px;
+            width: 250px;
+            color: #2c3e50;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
 
-.card img{
-  width: 140px;
-  height: auto;
-  margin:15px 0;
-}
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
 
-.card h3{
-  margin-bottom:10px;
-  font-family: 'Inika', serif;
-  font-size: 32px;
-}
+        .photo-box {
+            width: 100%;
+            height: 280px;
+            background-color: #ecf0f1;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #95a5a6;
+        }
 
-/* Tombol */
-.btn{
-  background:#6d6d6d;
-  color:white;
-  border:none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor:pointer;
-}
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-
-
-</style>
+        .result-label, .percentage-label {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <nav class="sidebar">
+        <h2>Sistem<br>E-Voting<br>Osis</h2>
+        <div class="nav-links">
+            <div>Voting</div>
+            <div class="active">Hasil Voting</div>
+        </div>
+        <div class="user-info">
+            <p>Hi Alletta</p>
+            <div class="logout-btn">Log Out →</div>
+        </div>
+    </nav>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Sistem<br>E-Voting<br>Osis</h2>
+    <div class="main-wrapper">
+        <header class="header-title">
+            <h1 class="title">HASIL VOTING</h1>
+        </header>
 
-    <ul class="menu">
-      <li>Voting</li>
-      <li>Hasil Voting</li>
-    </ul>
+        <main class="main-content">
+            <div class="card-container">
+              
+                <div class="card">
+                    <h3>Kandidat 1</h3>
+                    <div class="photo-box">
+                        <img src="cantika.png" alt="Kandidat 1">
+                    </div>
+                    <div class="result-label">0 orang</div>
+                    <div class="percentage-label">0%</div>
+                </div>
 
-    <button class="logout">Log Out</button>
-  </div>
+              
+                <div class="card">
+                    <h3>Kandidat 2</h3>
+                    <div class="photo-box">
+                        <img src="alya-azzahra.png" alt="Kandidat 2">
+                    </div>
+                    <div class="result-label">0 orang</div>
+                    <div class="percentage-label">0%</div>
+                </div>
 
-  <!-- Main -->
-  <div class="main">
-
-    <div class="title">DAFTAR KANDIDAT</div>
-
-    <div class="cards">
-
-
-      <div class="card">
-        <h3>Kandidat 1</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.10.14-removebg-preview.png">
-        <br>
-        <button class="btn">Details</button>
-      </div>
-
-      
-      <div class="card">
-        <h3>Kandidat 2</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.12.02-removebg-preview.png">
-        <br>
-        <button class="btn">Details</button>
-      </div>
-
-      
-      <div class="card">
-        <h3>Kandidat 3</h3>
-        <img src="WhatsApp_image_2026-01-12_at_14.15.09-removebg-preview.png">
-        <br>
-        <button class="btn">Details</button>
-      </div>
-
+              
+                <div class="card">
+                    <h3>Kandidat 3</h3>
+                    <div class="photo-box">
+                        <img src="bayu-laksmana.png" alt="Kandidat 3">
+                    </div>
+                    <div class="result-label">0 orang</div>
+                    <div class="percentage-label">0%</div>
+                </div>
+            </div>
+        </main>
     </div>
-
-  </div>
-
-</div>
 
 </body>
 </html>
