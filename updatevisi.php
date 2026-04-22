@@ -63,6 +63,13 @@ body{
   background:rgba(255,255,255,0.25);
 }
 
+.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px; 
+}
+
 .logout{
   font-family: 'Inika', serif;
   font-size: 15px;
@@ -89,7 +96,7 @@ body{
 
 .card{
   display:flex;
-  background: #A3B8B1;
+  background:rgba(255,255,255,0.15);
   padding:25px;
   border-radius:12px;
   backdrop-filter: blur(5px);
@@ -158,16 +165,18 @@ body{
 <div class="container">
 
   <div class="sidebar">
-    <h2>Sistem<br>E-Voting<br>Osis</h2>
+  <h2>Sistem<br>E-Voting<br>Osis</h2>
 
-    <ul class="menu">
-      <li>Voting</li>
-      <p>Hasil Voting</p>
-    </ul>
+  <ul class="menu">
+    <li>Voting</li>
+    <p>Hasil Voting</p>
+  </ul>
+
+  <div class="bottom">
     <span>Hi Alletta</span>
-
     <button class="logout">Log Out →</button>
   </div>
+</div>
 
   <div class="main">
 
