@@ -21,7 +21,6 @@
             overflow: hidden;
         }
 
-      
         .sidebar {
             width: 180px; 
             background-color: #4c6f7a;
@@ -96,11 +95,14 @@
             font-family: 'Inika', serif;
             font-weight: bold;
             background-color: #F6FFFC;
-            background-image: linear-gradient(to top, #007bff, #f8f5f5);
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #2c3e50;
+            background: linear-gradient(
+        rgba(57, 86, 212, 0.4),
+        rgba(78, 87, 209, 0)
+    );
         }
 
         .main-content {
@@ -109,10 +111,10 @@
             justify-content: center;
             align-items: flex-start;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            background:rgba(255,255,255,0.1);
+           
             padding: 15px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            background:rgba(255,255,255,0.1);
+            
             padding: 15px;
         }
 
