@@ -220,10 +220,7 @@
       <button class="back">↩ Kembali</button>
     </div>
 
-    <div class="buttons">
-          <button class="vote" onclick="window.location.href='halamankonfirmasi.php'">VOTING</button>
-          <button class="back" onclick="window.location.href='halaman4.php'">KEMBALI</button>
-</div>
+    
 
   </div>
 
