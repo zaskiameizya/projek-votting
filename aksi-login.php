@@ -15,8 +15,8 @@ include "./config.php";
 // memanggil koneksi di config.php 
 include "./config.php";
 
-// query untuk mengambil data dari user dengan email = $_POST['input_email']
-$query = "SELECT * FROM users WHERE email='".$_POST['inputan_email']."'";
+// query untuk mengambil data dari user dengan NISN = $_POST['input_NISN']
+$query = "SELECT * FROM users WHERE NISN='".$_POST['input_NISN']."'";
 
 // menjalankan query dengan koneksi dari $conn
 // result di sini akan digunakan untuk memanggil data
@@ -41,9 +41,9 @@ if ($result->num_rows == 0) {
   header("location:index.php");
   exit(); // langsung akhiri eksekusi tanpa harus lanjut ke bawah
 } else {
-  if ($_POST['inputan_password'] == $row['password']) {
+  if ($_POST['kode'] == $row['plain_code']) {
     // echo "Anda berhasil login";
-    header("location:main.php");
+    header("location:halaman4.php");
   } else {
     // echo "Password anda salah";
     header("location:index.php");
