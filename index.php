@@ -95,7 +95,7 @@ body {
 </div>
 
 <div class="container">
-    <form class="form">
+    <form class="form" action="halaman4.php" method="get">
 
         <div class="nisn">
             <i class="hgi hgi-stroke hgi-edit-user-02"></i>
