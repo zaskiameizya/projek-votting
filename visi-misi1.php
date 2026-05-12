@@ -232,11 +232,11 @@ body{
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>1. Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler
+          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler
               dan organisasi sekolah.</li>
-          <li>2. Meningkatkan prestasi akademik dan non-akademik siswa melalui
+          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui
               program bimbingan dan pelatihan.</li>
-          <li>3. Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
         </ol>
       </div>
 

@@ -233,9 +233,9 @@ body{
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>1. Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
-          <li>2. Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
-          <li>3. Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
+          <li>Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
+          <li>Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
+          <li>Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
         </ol>
       </div>
 
