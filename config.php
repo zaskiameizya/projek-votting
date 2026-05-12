@@ -2,6 +2,8 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
+
+$db   = "rpl_vote";
 $db   = "rpl-vote";
 
 $conn = new mysqli($host, $user, $pass, $db);

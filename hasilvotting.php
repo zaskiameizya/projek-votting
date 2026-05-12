@@ -164,6 +164,52 @@
             font-weight: bold;
             outline: 2px solid black;
         }
+
+        .percentage-label{
+            background:#444C47;
+            border:none;
+            padding:12px 30px;
+            border-radius:8px;
+            color:white;
+            cursor:pointer;
+        }
+
+        .percentage-label{
+            background:#444C47;
+            border:none;
+            padding:12px 30px;
+            border-radius:8px;
+            color:white;
+            cursor:pointer;
+        }
+
+        .hasil {
+            background:#444C47;
+            border:none;
+            padding:12px 30px;
+            border-radius:8px;
+            color:white;
+            cursor:pointer;
+        }
+        
+        .hasil{
+            background:#444C47;
+            border:none;
+            padding:12px 30px;
+            border-radius:8px;
+            color:white;
+            cursor:pointer;
+        }
+
+        .hasil:hover,
+        .hasil:hover{
+            background:#284F63;
+        }
+        .percentage-label:hover,
+        .percentage-label:hover{
+            background:#284F63;
+        }
+
     </style>
 </head>
 <body>
