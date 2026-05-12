@@ -3,49 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem E-Voting OSIS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Halaman Akhir</title>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+      
     <style>
-        * 
-<style>
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family:  'Inika', serif;
         }
 
         body {
             display: flex;
-            height: 100vh;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            height: 100vh; 
             background-image: url('BG.jpeg');
+            background-size: cover;
+            color: white;
+            overflow: hidden;
         }
 
+      
         .sidebar {
-            width: 150px;
-            background-color: #4c6f7a; 
-            color: white;
+            width: 200px; 
+            background-color: #4c6f7a;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
-            padding: 20px 0;
+            border-right: 1px solid #2c3e50;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+            z-index: 10;
         }
 
-        .sidebar-header {
-            padding: 20px;
+        .sidebar h2 {
+            font-size: 22px;
             text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
+            line-height: 1.4;
+            font-family: 'Inika', serif;
         }
 
-        .nav-menu {
+        .nav-links {
             flex-grow: 1;
         }
+
+        .nav-links div {
+            padding: 15px 15px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .nav-links .active {
+            font-weight: bold;
+            color: #f2f4f5;
+            border-radius: 12px;
+            background: transparent;
+        }
+
+        .user-info {
+            font-size: 14px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .logout-btn {
+            margin-top: 10px;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            display: inline-block;
+            outline: 2px solid black;
+        }
+
+        .content{
+            margin-left:150px;
+            width:calc(100% - 150px);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            position:relative;
+    
+        } 
 
         .nav-item {
             padding: 15px 25px;
@@ -57,227 +104,101 @@
         }
 
         .nav-item2{
-         padding: 15px 25px;
-         cursor:pointer;
-         color: white;
-         text-decoration: none;
-        }
-
-
-        .nav-item.active {
-            background-color: #243b55;
+            padding: 15px 25px;
+            cursor:pointer;
             color: white;
-            border-left: 5px solid #3498db;
-        }
-
-        .sidebar-footer {
-            padding: 20px;
-            
-        }
-
-        .user-info {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-
-        .btn-logout {
-            background: #2c3e50;
-            color: white;
-            border: 1px solid #455a64;
-            padding: 8px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .main-content {
-            flex-grow: 1;
-            background-image: url('BG.jpeg');
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            color: white;
-            max-width: 600px;
-            z-index: 2;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .glass-card h2 {
-            font-size: 1.5rem;
-            line-height: 1.5;
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        .btn-login-page {
-            background-color: #0d1b2a;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
             text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.9rem;
-            transition: 0.3s;
         }
 
-        .btn-login-page:hover {
-            background-color: #1b263b;
-            transform: translateY(-2px);
-        }
 
-        
-        .illustration-container {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-            z-index: 1;
-            opacity: 0.8;
-        }
-         .foto-orang{
-            margin-right: -150px;
-            margin-top: 280px;
-            z-index: 2;
-            margin-bottom: -25px;
-        }
-         .container{
-            display:flex;
-            height:100vh;
-        }
-
-         .sidebar{
-            font-family: 'Inika', serif;
-            width:150px;
-            background:#4c6f7a;
-            border-right: 1px solid black;
-            color:white;
-            padding:30px 20px;
-            display:flex;
-            flex-direction:column;
-            justify-content:space-between; /* Menjaga jarak konten atas dan bawah */
-        }
-
-         .sidebar h2{
+        .card{
+            width: 700px;
+            height: 400px;
+            background:#698D9F;
+            border-radius:10px;
             text-align:center;
-            font-size:20px;
-            margin-bottom:40px;
-            margin-right: 10px;
+            padding-top:50px;
+            position:relative;
+            z-index:2;
+            border: 3px solid #386982;
         }
 
-         .menu{
-            list-style:none;
-        }
-
-         .menu li{
-            padding:10px;
-            margin-bottom:5px;
-            background:rgba(255,255,255,0.1);
-            border-radius:8px;
-            cursor:pointer;
-        }
-
-         .menu p{
-            padding:10px;
-            margin-bottom:5px;
-            border-radius:8px;
-            cursor:pointer;
-        }
-         .menu li:hover{
-            background:rgba(255,255,255,0.25);
-        }
-
-         .logout{
-            padding:10px;
-            border:none;
-            border-radius:8px;
-            background:#2c4f5a;
+        .card h1{
             color:white;
+            font-size: 32px;
+            line-height:42px;
+            font-weight:bold;
+            margin-top: 50px;
+        }
+
+        .btn{
+            margin-top:15px;
+            background: #444C47;
+            color:white;
+            border-radius:18px;
+            padding:12px 28px;
+            font-size:18px;
+            font-weight:bold;
             cursor:pointer;
+            margin-top: 50px;
+            border:none;
+            transition:0.3s;
+            outline: 2px solid black;
         }
 
-         .boxdalam {
-            background-color: #a5c3e6; 
-            padding: 50px;
-            border-radius: 20px;
-            text-align: center;
-            width: 500px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-left: 100px;
-            margin-right: 100px;
+        .btn:hover{
+            background: #386982;
+        }
+        .btn:active{
+            background: #386982;
+            transform:scale(0.97);
         }
 
-         h2 {
-            color: #1a2a44;
-            margin-bottom: 10px;
-            font-size: 24px;
+        .students{
+            position:absolute;
+            left:90px;
+            bottom: -50px;
+            width:400px;
+            z-index:3;
+            margin-left: 200px;
         }
 
-         p {
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
-</style>
-
+    </style>
+</head>
 <body>
 
-    <div class="sidebar">
-        <div class="sidebar-header">
-            Sistem<br>E-Voting OSIS
+    <nav class="sidebar">
+        <h2>Sistem<br>E-Voting<br>Osis</h2>
+        <div class="nav-links">
+            <div onclick="window.location.href='halaman4.php'">Voting</div>
+            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Voting</div>
         </div>
-        
-        <div class="nav-menu">
-            <a href="#" class="nav-item">Voting</a>
-            <a href="#" class="nav-item2">Hasil Voting</a>
+        <div class="user-info">
+            <p>Hi Alletta</p>
+            <div class="logout-btn" onclick="window.location.href='index.php'">Log Out →</div>
         </div>
+    </nav>
 
-        <div class="sidebar-footer">
-            <div class="user-info">Hi Alletta</div>
-            <button class="btn-logout">
-                Log Out → <i class="fas fa-sign-out-alt"></i>
-            </button>
-        </div>
-    </div>
+     <div class="content">
 
-    <div class="main-content">
-        
-        <div class="glass-card">
-            <h2>Pilihan anda sudah kami simpan,<br>Terima kasih sudah berpartisipasi dalam voting ini.</h2>
+        <div class="card">
+
+            <h1>
+                Pilihan anda sudah kami simpan,<br>
+                Terima kasih sudah berpartisipasi<br>
+                dalam voting ini.
+            </h1>
+
+           <button class="btn" onclick="window.location.href='index.php'">
+                KEMBALI KE HALAMAN LOGIN 
+           <i class="hgi hgi-stroke hgi-rounded hgi-link-backward"></i>
+           </button>
             
-            <button href="#" class="btn-login-page">
-                KEMBALI KE HALAMAN LOGIN <i class="fas fa-undo-alt"></i>
-</button>
         </div>
 
-          <div class="foto-orang">
-            <img height="360px" src="dua-orang.png">
-          </div>
-        
-          <div class="buttons">
-          <button class="btn-login-page" onclick="window.location.href='index.php'">VOTING</button>
-          
-</div>
-        </div>
- 
     </div>
-
+     
+    <img src="dua-orang.png" class="students">
+      
 </body>
 </html>

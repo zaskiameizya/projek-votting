@@ -235,8 +235,8 @@ body{
     </div>
 
     <div class="buttons">
-      <button class="vote" onclick="bukaModal()">✔ Voting</button>
-      <button class="back">↩ Kembali</button>
+      <button class="vote" onclick="window.location.href='halamanakhir.php'">✔ Voting</button>
+      <button class="back" onclick="window.location.href='halamankonfirmasi.php'">↩ Kembali</button>
     </div>
 
   </div>
@@ -256,10 +256,7 @@ body{
   </div>
 </div>
 
-<div class="buttons">
-          <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
-          <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">KEMBALI</button>
-</div>
+
 
 <script>
 function bukaModal() {
