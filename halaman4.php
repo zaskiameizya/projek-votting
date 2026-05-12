@@ -161,6 +161,30 @@
             font-weight: bold;
             outline: 2px solid black;
         }
+
+        .result-label {
+             background:#686D6A;
+             border:none;
+             padding:12px 30px;
+             border-radius:8px;
+             color:white;
+             cursor:pointer;
+        }
+
+        .result-label {
+             background:#686D6A;
+             border:none;
+             padding:12px 30px;
+             border-radius:8px;
+             color:white;
+             cursor:pointer;
+        }
+
+        .result-label:hover,
+        .result-label:hover{
+        background:#404341;
+    }
+
     </style>
 </head>
 <body>
@@ -169,7 +193,7 @@
         <h2>Sistem<br>E-Voting<br>Osis</h2>
         <div class="nav-links">
             <div onclick="window.location.href='halaman4.php'">Voting</div>
-            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Votting</div>
+            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Voting</div>
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
