@@ -78,6 +78,7 @@
             cursor: pointer;
             border-radius: 20px;
             display: inline-block;
+            outline: 2px solid black;
         }
 
         .main-wrapper {
@@ -158,6 +159,7 @@
             border-radius: 10px;
             margin-bottom: 5px;
             font-weight: bold;
+            outline: 2px solid black;
         }
     </style>
 </head>
@@ -167,7 +169,7 @@
         <h2>Sistem<br>E-Voting<br>Osis</h2>
         <div class="nav-links">
             <div onclick="window.location.href='halaman4.php'">Voting</div>
-            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Votting</div>
+            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Voting</div>
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
