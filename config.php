@@ -5,8 +5,8 @@ $pass = "";
 <<<<<<< HEAD
 $db   = "rpl_vote";
 =======
-$db   = "projek-votting";
->>>>>>> 97994c7ec3cb447996c0d188d73deef214f9554f
+$db   = "rpl-vote";
+>>>>>>> 015ab4555ad2432ca867161bc6a23ae6369c9ddd
 
 $conn = new mysqli($host, $user, $pass, $db);
 
