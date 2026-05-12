@@ -163,7 +163,7 @@
         }
 
         .percentage-label{
-            background:#444C47;
+            background:#34495e;
             border:none;
             padding:12px 30px;
             border-radius:8px;
