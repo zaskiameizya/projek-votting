@@ -258,8 +258,8 @@ body{
       pilihan anda tidak dapat di ubah.
     </p>
 
-    <button class="btn-simpan">SIMPAN</button>
-    <button class="btn-batal" >BATAL</button>
+    <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">SIMPAN</button>
+    <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">BATAL</button>
   </div>
 </div>
 
