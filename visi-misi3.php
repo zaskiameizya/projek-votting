@@ -242,8 +242,13 @@ body{
     </div>
 
     <div class="buttons">
+<<<<<<< HEAD
       <button class="vote" onclick="bukaModal()">✔ Voting</button>
       <button class="back">↩ Kembali</button>
+=======
+      <button class="vote" onclick="window.location.href='halamankonfirmasi.php'">✔ Voting</button>
+      <button class="back" onclick="window.location.href='halaman4.php'">↩ Kembali</button>
+>>>>>>> fc8e0f6fcd821c36a5f262590064a4aa42edbbf1
     </div>
 
   </div>

@@ -51,13 +51,16 @@
             font-size: 15px;
             margin-bottom: 10px;
             transition: 0.3s;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            font-weight: bold;
         }
 
         .nav-links .active {
             font-weight: bold;
             color: #f2f4f5;
-            background: rgba(255,255,255,0.15);
             border-radius: 12px;
+            background: transparent;
         }
 
         .user-info {
@@ -75,6 +78,7 @@
             cursor: pointer;
             border-radius: 20px;
             display: inline-block;
+            
         }
 
         .main-wrapper {
@@ -92,7 +96,7 @@
         }
 
         .title {
-            font-size: 30px;
+            font-size: 64px;
             font-family: 'Inika', serif;
             font-weight: bold;
             background-image: linear-gradient(to right, #007bff, #e0e0e0);
@@ -109,6 +113,7 @@
             align-items: flex-start;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             padding: 15px;
+            margin-top: 70px;
         }
 
         .card-container {
@@ -154,6 +159,7 @@
             border-radius: 10px;
             margin-bottom: 5px;
             font-weight: bold;
+            
         }
     </style>
 </head>
@@ -162,8 +168,8 @@
     <nav class="sidebar">
         <h2>Sistem<br>E-Voting<br>Osis</h2>
         <div class="nav-links">
-            <div>Voting</div>
-            <div class="active">Hasil Votting</div>
+            <div onclick="window.location.href='halaman4.php'">Voting</div>
+            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Voting</div>
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
