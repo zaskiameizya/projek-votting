@@ -169,7 +169,7 @@
         <h2>Sistem<br>E-Voting<br>Osis</h2>
         <div class="nav-links">
             <div onclick="window.location.href='halaman4.php'">Voting</div>
-            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Votting</div>
+            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Voting</div>
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
