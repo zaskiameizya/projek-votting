@@ -24,13 +24,11 @@ body{
     height:100vh;
     background:rgba(255,255,255,0.1);
     position:fixed;
-    left:0;
-    top:0;
     color:white;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    z-index:2;
+    z-index:20;
 }
 
 .logo{
@@ -50,9 +48,10 @@ body{
     color:white;
     text-decoration:none;
     text-align:center;
-    padding:15px;
+    padding:10px;
     font-size:18px;
     font-weight:bold;
+    border-radius:8px;
 }
 
 .menu a:hover{
@@ -80,7 +79,6 @@ body{
     font-weight:bold;
 }
 
-/* CONTENT */
 .content{
     margin-left:150px;
     width:calc(100% - 150px);
@@ -89,6 +87,7 @@ body{
     justify-content:center;
     align-items:center;
     position:relative;
+    
 }
 
 .nav-item {
@@ -107,7 +106,7 @@ body{
          text-decoration: none;
         }
 
-/* BOX */
+
 .card{
     width:550px;
     height:240px;
@@ -117,6 +116,7 @@ body{
     padding-top:50px;
     position:relative;
     z-index:2;
+    border: 3px solid #386982;
 }
 
 .card h1{
@@ -126,7 +126,7 @@ body{
     font-weight:bold;
 }
 
-/* BUTTON */
+
 .btn{
     margin-top:15px;
     background:#5c6159;
@@ -138,11 +138,8 @@ body{
     cursor:pointer;
 }
 
-.btn:hover{
-    background:#4b4f48;
-}
 
-/* IMAGE */
+
 .students{
     position:absolute;
     left:90px;
@@ -156,7 +153,7 @@ body{
 
 <body>
 
-<!-- SIDEBAR -->
+
 <div class="sidebar">
 
     <div>
@@ -184,7 +181,7 @@ body{
 
 </div>
 
-<!-- CONTENT -->
+
 <div class="content">
 
     <div class="card">
