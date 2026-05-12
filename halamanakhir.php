@@ -133,7 +133,7 @@
 
         .btn{
             margin-top:15px;
-            background:#5c6159;
+            background: #444C47;
             color:white;
             border-radius:18px;
             padding:12px 28px;
@@ -141,6 +141,17 @@
             font-weight:bold;
             cursor:pointer;
             margin-top: 50px;
+            border:none;
+            transition:0.3s;
+            outline: 2px solid black;
+        }
+
+        .btn:hover{
+            background: #386982;
+        }
+        .btn:active{
+            background: #386982;
+            transform:scale(0.97);
         }
 
         .students{
@@ -178,7 +189,10 @@
                 dalam voting ini.
             </h1>
 
-            <button class="btn" onclick="window.location.href='index.php'">KEMBALI KE HALAMAN LOGIN <i class="hgi hgi-stroke hgi-rounded hgi-link-backward"></i></button>
+           <button class="btn" onclick="window.location.href='index.php'">
+                KEMBALI KE HALAMAN LOGIN 
+           <i class="hgi hgi-stroke hgi-rounded hgi-link-backward"></i>
+           </button>
             
         </div>
 

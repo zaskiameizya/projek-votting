@@ -16,23 +16,29 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 .logo {
     text-align: center;
     margin-top: 50px;
 }
+
 .logo img {
     width: 170px;
 }
+
 .sekolah {
     text-align: center;
+    font-family: 'Abril Fatface';
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .form {
     width: 90%;
     max-width: 500px;
@@ -41,18 +47,25 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 .nisn, .kode {
+    position: relative;
     display: flex;
     align-items: center;
     background-color: #D9D9D9;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     margin-bottom: 20px;
+    font-family: 'Inika';
 }
+
 .nisn i, .kode i {
+    position: absolute;
+    left: 15px;
     font-size: 20px;
-    margin-right: 10px;
+    color: #555;
 }
+
 .nisn input, .kode input {
     border: none;
     outline: none;
@@ -60,19 +73,30 @@ body {
     width: 100%;
     font-size: 18px;
     text-align: center;
+    font-family: 'Inika', sans-serif;
 }
+
 .login-btn {
     width: 100%;
     padding: 12px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Inika';
+    font-weight: bold;
     background-color: #0B2635;
     color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
+
 .login-btn:hover {
     background-color: #12394f;
+}
+
+.login-btn:active {
+    background-color: #081b25;
+    transform: scale(0.98);
 }
 
 .footer {
