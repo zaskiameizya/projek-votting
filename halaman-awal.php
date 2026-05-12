@@ -147,8 +147,8 @@ p {
             <h2>Autentifikasi Gagal!</h2>
             <p>NISN dan Kode salah!</p>
 
-            <button class="btn-cobalagi">
-                <span class="icon-refresh">&#8634;</span> COBA LAGI</button>
+            
+               <button class="btn-cobalagi" onclick="window.location.href='index.php'">COBA LAGI</button>
             
         </div>
 

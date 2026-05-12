@@ -87,7 +87,6 @@
         .header-title {
             width: 100%;
             background-color: #F6FFFC;
-            padding: 15px 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
@@ -100,10 +99,8 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #2c3e50;
-            background: linear-gradient(
-        rgba(57, 86, 212, 0.4),
-        rgba(78, 87, 209, 0)
-    );
+            background-image: linear-gradient(to right, #3b5670, #e0e0e0, #456585);
+    
         }
 
         .main-content {
@@ -166,7 +163,7 @@
         }
 
         .percentage-label{
-            background:#444C47;
+            background:#34495e;
             border:none;
             padding:12px 30px;
             border-radius:8px;
