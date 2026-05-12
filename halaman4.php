@@ -95,7 +95,7 @@
         }
 
         .title {
-            font-size: 30px;
+            font-size: 64px;
             font-family: 'Inika', serif;
             font-weight: bold;
             background-image: linear-gradient(to right, #007bff, #e0e0e0);
@@ -112,6 +112,7 @@
             align-items: flex-start;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             padding: 15px;
+            margin-top: 70px;
         }
 
         .card-container {
@@ -165,8 +166,8 @@
     <nav class="sidebar">
         <h2>Sistem<br>E-Voting<br>Osis</h2>
         <div class="nav-links">
-            <div>Voting</div>
-            <div class="active">Hasil Votting</div>
+            <div onclick="window.location.href='halaman4.php'">Voting</div>
+            <div class="active" onclick="window.location.href='hasilvotting.php'">Hasil Votting</div>
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
