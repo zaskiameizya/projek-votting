@@ -91,7 +91,7 @@
         .header-title {
             width: 100%;
             background-color: #F6FFFC;
-            padding: 15px 0;
+            /* padding: 15px 0; */
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
@@ -99,7 +99,7 @@
             font-size: 64px;
             font-family: 'Inika', serif;
             font-weight: bold;
-            background-image: linear-gradient(to right, #007bff, #e0e0e0);
+            background-image: linear-gradient(to right, #3b5670, #e0e0e0, #456585);
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;

@@ -119,16 +119,16 @@ body {
 </div>
 
 <div class="container">
-    <form class="form" action="halaman4.php" method="get">
+    <form class="form" action="aksi-login.php" method="POST">
 
         <div class="nisn">
             <i class="hgi hgi-stroke hgi-edit-user-02"></i>
-            <input type="text" placeholder="NISN">
+            <input name="nisn" type="text" placeholder="NISN">
         </div>
 
         <div class="kode">
             <i class="hgi hgi-stroke hgi-authorized"></i>
-            <input type="password" placeholder="Kode">
+            <input name="kode" type="password" placeholder="Kode">
         </div>
 
         <button type="submit" class="login-btn">Login</button>
