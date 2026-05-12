@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem E-Voting OSIS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>E-Voting OSIS</title>
+
 <style>
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-        body {
-            display: flex;
-            height: 100vh;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            background-image: url('BG.jpeg');
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inika', serif;
+}
 
-        .sidebar {
-            width: 150px;
-            background-color: #4c6f7a; 
-            color: white;
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-        }
+body{
+    background-image: url('BG.jpeg');
+}
 
-        .sidebar-header {
-            padding: 20px;
-            text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
+.sidebar{
+    width:150px;
+    height:100vh;
+    background:rgba(255,255,255,0.1);
+    position:fixed;
+    left:0;
+    top:0;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    z-index:2;
+}
 
-        .nav-menu {
-            flex-grow: 1;
-        }
+.logo{
+    text-align:center;
+    margin-top:30px;
+    font-size:20px;
+    font-weight:bold;
+    line-height:40px;
+}
 
-        .nav-item {
+.menu{
+    margin-top:40px;
+}
+
+.menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    background:#29536b;
+}
+
+/* BOTTOM */
+.bottom{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.bottom h2{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.logout{
+    display:inline-block;
+    background:#173547;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* CONTENT */
+.content{
+    margin-left:150px;
+    width:calc(100% - 150px);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.nav-item {
             padding: 15px 25px;
             cursor: pointer;
             display: block;
@@ -63,221 +107,102 @@
          text-decoration: none;
         }
 
+/* BOX */
+.card{
+    width:550px;
+    height:240px;
+    background:#698D9F;
+    border-radius:10px;
+    text-align:center;
+    padding-top:50px;
+    position:relative;
+    z-index:2;
+}
 
-        .nav-item.active {
-            background-color: #243b55;
-            color: white;
-            border-left: 5px solid #3498db;
-        }
+.card h1{
+    color:white;
+    font-size:24px;
+    line-height:42px;
+    font-weight:bold;
+}
 
-        .sidebar-footer {
-            padding: 20px;
-            
-        }
+/* BUTTON */
+.btn{
+    margin-top:15px;
+    background:#5c6159;
+    color:white;
+    border-radius:18px;
+    padding:12px 28px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
 
-        .user-info {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
+.btn:hover{
+    background:#4b4f48;
+}
 
-        .btn-logout {
-            background: #2c3e50;
-            color: white;
-            border: 1px solid #455a64;
-            padding: 8px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* IMAGE */
+.students{
+    position:absolute;
+    left:90px;
+    bottom:0;
+    width:340px;
+    z-index:3;
+}
 
-        .main-content {
-            flex-grow: 1;
-            background-image: url('BG.jpeg');
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            color: white;
-            max-width: 600px;
-            z-index: 2;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .glass-card h2 {
-            font-size: 1.5rem;
-            line-height: 1.5;
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        .btn-login-page {
-            background-color: #0d1b2a;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.9rem;
-            transition: 0.3s;
-        }
-
-        .btn-login-page:hover {
-            background-color: #1b263b;
-            transform: translateY(-2px);
-        }
-
-        
-        .illustration-container {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-            z-index: 1;
-            opacity: 0.8;
-        }
-         .foto-orang{
-            margin-right: -150px;
-            margin-top: 280px;
-            z-index: 2;
-            margin-bottom: -25px;
-        }
-         .container{
-            display:flex;
-            height:100vh;
-        }
-
-         .sidebar{
-            font-family: 'Inika', serif;
-            width:150px;
-            background:#4c6f7a;
-            border-right: 1px solid black;
-            color:white;
-            padding:30px 20px;
-            display:flex;
-            flex-direction:column;
-            justify-content:space-between; /* Menjaga jarak konten atas dan bawah */
-        }
-
-         .sidebar h2{
-            text-align:center;
-            font-size:20px;
-            margin-bottom:40px;
-            margin-right: 10px;
-        }
-
-         .menu{
-            list-style:none;
-        }
-
-         .menu li{
-            padding:10px;
-            margin-bottom:5px;
-            background:rgba(255,255,255,0.1);
-            border-radius:8px;
-            cursor:pointer;
-        }
-
-         .menu p{
-            padding:10px;
-            margin-bottom:5px;
-            border-radius:8px;
-            cursor:pointer;
-        }
-         .menu li:hover{
-            background:rgba(255,255,255,0.25);
-        }
-
-         .logout{
-            padding:10px;
-            border:none;
-            border-radius:8px;
-            background:#2c4f5a;
-            color:white;
-            cursor:pointer;
-        }
-
-         .boxdalam {
-            background-color: #a5c3e6; 
-            padding: 50px;
-            border-radius: 20px;
-            text-align: center;
-            width: 500px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-
-         h2 {
-            color: #1a2a44;
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
-
-         p {
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
 </style>
+</head>
 
 <body>
 
-    <div class="sidebar">
-        <div class="sidebar-header">
-            Sistem<br>E-Voting OSIS
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+    <div>
+
+        <div class="logo">
+            Sistem<br>
+            E-Voting<br>
+            Osis
         </div>
-        
+
         <div class="nav-menu">
             <a href="#" class="nav-item">Voting</a>
             <a href="#" class="nav-item2">Hasil Voting</a>
         </div>
 
-        <div class="sidebar-footer">
-            <div class="user-info">Hi Alletta</div>
-            <button class="btn-logout">
-                Log Out → <i class="fas fa-sign-out-alt"></i>
-            </button>
-        </div>
     </div>
 
-    <div class="main-content">
-        
-        <div class="glass-card">
-            <h2>Pilihan anda sudah kami simpan,<br>Terima kasih sudah berpartisipasi dalam voting ini.</h2>
-            
-            <button href="#" class="btn-login-page">
-                KEMBALI KE HALAMAN LOGIN <i class="fas fa-undo-alt"></i>
-</button>
-        </div>
+    <div class="bottom">
+        <h2>Hi Alletta</h2>
 
-          <div class="foto-orang">
-            <img height="360px" src="dua-orang.png">
-          </div>
-        
-          <div class="buttons">
-          <button class="btn-login-page" onclick="window.location.href='index.php'">VOTING</button>
-          
+        <a href="#" class="logout">
+            Log Out ↪
+        </a>
+    </div>
+
 </div>
-        </div>
- 
+
+<!-- CONTENT -->
+<div class="content">
+
+    <div class="card">
+
+        <h1>
+            Pilihan anda sudah kami simpan,<br>
+            Terima kasih sudah berpartisipasi<br>
+            dalam voting ini.
+        </h1>
+
+        <button class="btn" onclick="window.location.href='index.php'">KEMBALI KE HALAMAN LOGIN</button>
+
     </div>
+
+    
+    <img src="dua-orang.png" class="students">
+
+</div>
 
 </body>
 </html>
