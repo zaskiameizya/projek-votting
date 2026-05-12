@@ -219,8 +219,8 @@
     </div>
 
     <div class="buttons">
-      <button class="vote">✔ Voting</button>
-      <button class="back">↩ Kembali</button>
+      <button class="vote" onclick="window.location.href='halamankonfirmasi.php'">✔ Voting</button>
+      <button class="back" onclick="window.location.href='halaman4.php'">↩ Kembali</button>
     </div>
 
     
