@@ -9,7 +9,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inika', Serif;
 }
 
 body{
@@ -233,9 +233,9 @@ body{
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>1. Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
-          <li>2. Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
-          <li>3. Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
+          <li>Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
+          <li>Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
+          <li>Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
         </ol>
       </div>
 
@@ -258,14 +258,14 @@ body{
       pilihan anda tidak dapat di ubah.
     </p>
 
-    <button class="btn-simpan">SIMPAN</button>
-    <button class="btn-batal" >BATAL</button>
+    <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">SIMPAN</button>
+    <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">BATAL</button>
   </div>
 </div>
 
 <div class="buttons">
           <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
-          <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">KEMBALI</button>
+          <button class="btn-batal" onclick="window.location.href='halaman4.php'">KEMBALI</button>
 </div>
 
 <script>

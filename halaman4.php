@@ -161,6 +161,30 @@
             font-weight: bold;
             
         }
+
+        .result-label {
+             background:#686D6A;
+             border:none;
+             padding:12px 30px;
+             border-radius:8px;
+             color:white;
+             cursor:pointer;
+        }
+
+        .result-label {
+             background:#686D6A;
+             border:none;
+             padding:12px 30px;
+             border-radius:8px;
+             color:white;
+             cursor:pointer;
+        }
+
+        .result-label:hover,
+        .result-label:hover{
+        background:#404341;
+    }
+
     </style>
 </head>
 <body>

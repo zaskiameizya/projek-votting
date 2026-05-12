@@ -9,7 +9,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inika', Serif;
 }
 
 body{
@@ -258,8 +258,8 @@ body{
       pilihan anda tidak dapat di ubah.
     </p>
 
-    <button class="btn-simpan">SIMPAN</button>
-    <button class="btn-batal" >BATAL</button>
+    <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">SIMPAN </button>
+    <button class="btn-batal" onclick="window.location.href='visi-misi2.php'">BATAL</button>
   </div>
 </div>
 

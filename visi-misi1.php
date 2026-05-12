@@ -9,7 +9,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Inika', Serif;
 }
 
 body{
@@ -232,11 +232,11 @@ body{
 
         <p><b>Misi:</b></p>
         <ol>
-          <li>1. Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler
+          <li>Meningkatkan keterlibatan siswa dalam kegiatan ekstrakurikuler
               dan organisasi sekolah.</li>
-          <li>2. Meningkatkan prestasi akademik dan non-akademik siswa melalui
+          <li>Meningkatkan prestasi akademik dan non-akademik siswa melalui
               program bimbingan dan pelatihan.</li>
-          <li>3. Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
+          <li>Membangun komunikasi yang efektif antara siswa, guru, dan staf sekolah.</li>
         </ol>
       </div>
 
@@ -259,8 +259,8 @@ body{
       pilihan anda tidak dapat di ubah.
     </p>
 
-    <button class="btn-simpan">SIMPAN</button>
-    <button class="btn-batal" >BATAL</button>
+    <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">SIMPAN</button>
+    <button class="btn-batal" onclick="window.location.href='visi-misi1.php'">BATAL</button>
   </div>
 </div>
 
