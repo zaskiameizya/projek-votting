@@ -62,7 +62,7 @@ body{
 }
 
 .logout{
-    font-family: 'Inika', serif;
+    font-family: 'Inika';
     font-size: 15px;
     display: block;
     text-align: center; 
