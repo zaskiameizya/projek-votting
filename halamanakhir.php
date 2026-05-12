@@ -262,15 +262,19 @@
         <div class="glass-card">
             <h2>Pilihan anda sudah kami simpan,<br>Terima kasih sudah berpartisipasi dalam voting ini.</h2>
             
-            <a href="#" class="btn-login-page">
+            <button href="#" class="btn-login-page">
                 KEMBALI KE HALAMAN LOGIN <i class="fas fa-undo-alt"></i>
-            </a>
+</button>
         </div>
 
           <div class="foto-orang">
             <img height="360px" src="dua-orang.png">
           </div>
         
+          <div class="buttons">
+          <button class="btn-login-page" onclick="window.location.href='index.php'">VOTING</button>
+          
+</div>
         </div>
  
     </div>
