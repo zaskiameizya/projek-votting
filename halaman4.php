@@ -51,13 +51,16 @@
             font-size: 15px;
             margin-bottom: 10px;
             transition: 0.3s;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            font-weight: bold;
         }
 
         .nav-links .active {
             font-weight: bold;
             color: #f2f4f5;
-            background: rgba(255,255,255,0.15);
             border-radius: 12px;
+            background: transparent;
         }
 
         .user-info {
