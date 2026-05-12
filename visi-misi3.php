@@ -3,187 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <title>Sistem E-Voting OSIS</title>
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: 'Inika', serif;
-    }
 
-    body{
-      background-image: url('BG.jpeg');
-      
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .container{
-      display:flex;
-      height:100vh;
-    }
+body{
+  background-image: url('BG.jpeg');
+}
 
-    /* SIDEBAR MODIFIKASI: Menu naik ke atas */
-    .sidebar{
-      font-family: 'Inika', serif;
-      width:150px;
-      background:#4c6f7a;
-      border-right: 1px solid black;
-      color:white;
-      padding:30px 20px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between; /* Menjaga jarak konten atas dan bawah */
-    }
+.container{
+  display:flex;
+  height:100vh;
+}
 
-    /* Pembungkus Judul dan Menu agar berkumpul di atas */
-    .top-section {
-      width: 100%;
-    }
+.sidebar{
+  width:150px;
+  background:#4c6f7a;
+  color:white;
+  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
 
-    .sidebar h2{
-      text-align:center;
-      font-size:20px;
-      margin-bottom:40px;
-    }
+.sidebar h2{
+  text-align:center;
+  font-size:20px;
+  margin-bottom:40px;
+}
 
-    .menu{
-      list-style:none;
-    }
+.menu{
+  list-style:none;
+  margin-top:-300px;
+}
 
-    .menu li{
-      padding:10px;
-      margin-bottom:5px;
-      background:rgba(255,255,255,0.1);
-      border-radius:8px;
-      cursor:pointer;
-    }
+.menu li{
+  padding:10px;
+  margin-bottom:5px;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  cursor:pointer;
+}
 
-    .menu p{
-      padding:10px;
-      margin-bottom:5px;
-      border-radius:8px;
-      cursor:pointer;
-    }
+.menu p{
+  padding:10px;
+  margin-bottom:5px;
+  border-radius:8px;
+  cursor:pointer;
+}
 
-    .menu li:hover{
-      background:rgba(255,255,255,0.25);
-    }
+.menu li:hover{
+  background:rgba(255,255,255,0.25);
+}
 
-    /* Bagian Bawah Sidebar */
-    .bottom-section {
-      width: 100%;
-    }
+.logout{
+    font-family: 'Inika', serif;
+    font-size: 15px;
+    display: block;
+    text-align: center; 
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    background: #2c4f5a;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
 
-    .logout{
-      font-family: 'Inika', serif;
-      font-size: 15px;
-      display: block;
-      text-align: center; /* Diubah ke center agar lebih rapi di sidebar sempit */
-      width: 100%;
-      height: 30px;
-      border-radius: 20px;
-      background: #2c4f5a;
-      color: white;
-      cursor: pointer;
-      border: none;
-    }
+.main{
+  flex:1;
+  padding:40px;
+  color:white;
+}
 
-    .main{
-      flex:1;
-      padding:40px;
-      color:white;
-    }
+.main h1{
+  text-align:center;
+  margin-bottom:30px;
+}
 
-    .main h1{
-      text-align:center;
-      margin-bottom:30px;
-    }
+.card{
+  display:flex;
+  background: #A3B8B1;
+  padding:25px;
+  border-radius:12px;
+  backdrop-filter: blur(5px);
+}
+.profile{
+  width:200px;
+  text-align:center;
+}
 
-    /* CARD: Posisi dan Bentuk Tetap Sama */
-    .card{
-      display:flex;
-      background: #A3B8B1;
-      padding:25px;
-      border-radius:12px;
-      backdrop-filter: blur(5px);
-    }
+.profile img{
+  width:130px;
+  border-radius:10px;
+  margin-bottom:10px;
+  background:white; 
+  padding:5px; 
+}
 
-    .profile{
-      width:200px;
-      text-align:center;
-    }
+.profile .name{
+  font-weight:bold;
+}
 
-    .profile img{
-      width:130px;
-      border-radius:10px;
-      margin-bottom:10px;
-    }
+.visi-misi .jabatan{
+  font-size:14px;
+  margin-bottom:15px;
+  color:#ddd;
+}
 
-    .profile .name{
-      font-weight:bold;
-    }
+.visi-misi ol{
+  margin-left:20px;
+}
 
-    .visi-misi {
-      margin-left:30px; /* Perbaikan dari margin-:30px sebelumnya */
-    }
+.buttons{
+  margin-top:25px;
+  display:flex;
+  justify-content:space-between;
+}
 
-    .visi-misi .jabatan{
-      font-size:14px;
-      margin-bottom:15px;
-      color:#ddd;
-    }
+.vote{
+  background:#7a8c92;
+  border:none;
+  padding:12px 30px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
 
-    .visi-misi ol{
-      margin-left:20px;
-    }
+.back{
+  background:#7a8c92;
+  border:none;
+  padding:12px 30px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
 
-    .buttons{
-      margin-top:25px;
-      display:flex;
-      justify-content:space-between;
-    }
+.vote:hover,
+.back:hover{
+  background:#5f737a;
+}
 
-    .vote{
-      background:#7a8c92;
-      border:none;
-      padding:12px 30px;
-      border-radius:8px;
-      color:white;
-      cursor:pointer;
-    }
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
 
-    .back{
-      background:#7a8c92;
-      border:none;
-      padding:12px 30px;
-      border-radius:8px;
-      color:white;
-      cursor:pointer;
-    }
+.modal {
+  background: #6f8c9c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+}
 
-    .vote:hover,
-    .back:hover{
-      background:#5f737a;
-    }
-  </style>
+.modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-simpan {
+  background: #2c3e50;
+  color: white;
+}
+
+.btn-batal {
+  background: #34495e;
+  color: white;
+}
+</style>
 </head>
-<body>
 
+<body>
 <div class="container">
 
   <div class="sidebar">
-    <div class="top-section">
-      <h2>Sistem<br>E-Voting<br>Osis</h2>
+    <h2>Sistem<br>E-Voting<br>Osis</h2>
 
-      <ul class="menu">
-        <li>Voting</li>
-        <p>Hasil Voting</p>
-      </ul>
-    </div>
+    <ul class="menu">
+      <li>Voting</li>
+      <p>Hasil Voting</p>
+    </ul>
 
-    <div class="bottom-section">
-      <span style="display:block; margin-bottom:10px;">Hi Alletta</span>
-      <button class="logout">Log Out →</button>
-    </div>
+    <button class="logout">Log Out</button>
   </div>
 
   <div class="main">
@@ -191,8 +215,9 @@
     <h1>Visi/Misi Kandidat</h1>
 
     <div class="card">
+
       <div class="profile">
-        <img src="bayu-laksmana.png" alt="Foto Kandidat">
+        <img src="bayu-laksmana.png" alt="">
         <p class="name">Bayu Laksmana</p>
         <small>Kandidat 3 - Calon<br>Ketua OSIS</small>
       </div>
@@ -202,29 +227,56 @@
         <p class="jabatan">Kandidat 3 - calon ketua osis</p>
 
         <p><b>Visi:</b><br>
-        “Meningkatkan Kreativitas dan Inovasi Siswa”
+        "Meningkatkan Kreativitas dan Inovasi Siswa"
+
         </p>
 
         <p><b>Misi:</b></p>
         <ol>
-          <li> Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
-          <li> Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
-          <li> Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
+          <li>1. Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
+          <li>2. Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
+          <li>3. Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
         </ol>
       </div>
 
     </div>
 
     <div class="buttons">
-      <button class="vote">✔ Voting</button>
+      <button class="vote" onclick="bukaModal()">✔ Voting</button>
       <button class="back">↩ Kembali</button>
     </div>
-
-    
 
   </div>
 
 </div>
+
+<div class="overlay" id="modalBox">
+  <div class="modal">
+    <p>
+      <b>Yakin dengan pilihan anda?</b><br><br>
+      Setelah klik “Simpan”,<br>
+      pilihan anda tidak dapat di ubah.
+    </p>
+
+    <button class="btn-simpan">SIMPAN</button>
+    <button class="btn-batal" >BATAL</button>
+  </div>
+</div>
+
+<div class="buttons">
+          <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
+          <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">KEMBALI</button>
+</div>
+
+<script>
+function bukaModal() {
+  document.getElementById("modalBox").style.display = "flex";
+}
+
+function tutupModal() {
+  document.getElementById("modalBox").style.display = "none";
+}
+</script>
 
 </body>
 </html>
