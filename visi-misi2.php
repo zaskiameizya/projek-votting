@@ -264,8 +264,14 @@ body{
 </div>
 
 <div class="buttons">
-          <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
-          <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">KEMBALI</button>
+          button class="vote" onclick="bukaModal()">
+        ✔ Voting
+      </button>
+
+      <button class="back"
+      onclick="window.location.href='halaman4.php'">
+        ↩ Kembali
+      </button>
 </div>
 
 <script>
