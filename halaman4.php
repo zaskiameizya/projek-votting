@@ -170,7 +170,7 @@
         </div>
         <div class="user-info">
             <p>Hi Alletta</p>
-            <div class="logout-btn">Log Out →</div>
+            <div class="logout-btn" onclick="window.location.href='index.php'">Log Out →</div>
         </div>
     </nav>
 
@@ -187,7 +187,7 @@
                     <div class="photo-box">
                         <img src="cantika.png" alt="Kandidat 1">
                     </div>
-                    <div class="result-label">Details</div>
+                    <div class="result-label" onclick="window.location.href='visi-misi1.php'">Details</div>
                    
                 </div>
 
@@ -197,7 +197,7 @@
                     <div class="photo-box">
                         <img src="alya-azzahra.png" alt="Kandidat 2">
                     </div>
-                    <div class="result-label">Details</div>
+                    <div class="result-label" onclick="window.location.href='visi-misi2.php'">Details</div>
                     
                 </div>
 
@@ -207,7 +207,7 @@
                     <div class="photo-box">
                         <img src="bayu-laksmana.png" alt="Kandidat 3">
                     </div>
-                    <div class="result-label">Details</div>
+                    <div class="result-label" onclick="window.location.href='visi-misi3.php'">Details</div>
                     
                 </div>
             </div>

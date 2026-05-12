@@ -252,8 +252,13 @@ body{
     </p>
 
     <button class="btn-simpan">SIMPAN</button>
-    <button class="btn-batal" onclick="tutupModal()">BATAL</button>
+    <button class="btn-batal" >BATAL</button>
   </div>
+</div>
+
+<div class="buttons">
+          <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
+          <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">KEMBALI</button>
 </div>
 
 <script>
