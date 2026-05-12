@@ -28,8 +28,9 @@ body {
 
 .sekolah {
     text-align: center;
+    font-family: 'Abril Fatface';
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .container {
@@ -55,6 +56,7 @@ body {
     border-radius: 20px;
     padding: 12px 15px;
     margin-bottom: 20px;
+    font-family: 'Inika';
 }
 
 .nisn i, .kode i {
@@ -71,13 +73,14 @@ body {
     width: 100%;
     font-size: 18px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inika', sans-serif;
 }
 
 .login-btn {
     width: 100%;
     padding: 12px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Inika';
     font-weight: bold;
     background-color: #0B2635;
     color: white;
