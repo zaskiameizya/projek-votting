@@ -112,7 +112,7 @@
 
 
         .card{
-            width: 800px;
+            width: 700px;
             height: 400px;
             background:#698D9F;
             border-radius:10px;
@@ -149,7 +149,7 @@
             bottom: -50px;
             width:400px;
             z-index:3;
-            margin-left: 300px;
+            margin-left: 200px;
         }
 
     </style>
