@@ -78,6 +78,7 @@
             cursor: pointer;
             border-radius: 20px;
             display: inline-block;
+            outline: 2px solid black;
         }
 
         .main-wrapper {
@@ -158,6 +159,7 @@
             border-radius: 10px;
             margin-bottom: 5px;
             font-weight: bold;
+            outline: 2px solid black;
         }
     </style>
 </head>
