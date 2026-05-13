@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Sistem E-Voting OSIS</title>
+<meta charset="UTF-8">
+<title>Sistem E-Voting OSIS</title>
 
 <style>
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Inika', Serif;
+  font-family: Inika;
 }
 
 body{
   background-image: url('BG.jpeg');
-  background-size: cover;
 }
 
 .container{
@@ -64,16 +64,16 @@ body{
 
 .logout{
   font-family: 'Inika', serif;
-  font-size: 15px;
-  display: block;
-  text-align: center; 
-  width: 100%;
-  height: 30px;
-  border-radius: 20px;
-  background: #2c4f5a;
-  color: white;
-  cursor: pointer;
-  border: none;
+  font-size:15px;
+  display:block;
+  text-align:center;
+  width: 100px;
+  height:30px;
+  border-radius:20px;
+  background:#2c4f5a;
+  color:white;
+  cursor:pointer;
+  border:none;
 }
 
 .main{
@@ -87,13 +87,23 @@ body{
   margin-bottom:30px;
 }
 
+/* CARD */
+
 .card{
-  display:flex;
-  background: #A3B8B1;
+  background:#A3B8B1;
   padding:25px;
   border-radius:12px;
-  backdrop-filter: blur(5px);
+  backdrop-filter:blur(5px);
 }
+
+/* ISI CARD */
+
+.isi-card{
+  display:flex;
+  gap:25px;
+}
+
+/* PROFILE */
 
 .profile{
   width:200px;
@@ -104,17 +114,28 @@ body{
   width:130px;
   border-radius:10px;
   margin-bottom:10px;
-  background:white; 
-  padding:5px; 
+  background:white;
+  padding:5px;
 }
 
 .profile .name{
   font-weight:bold;
 }
 
-.visi-misi .jabatan{
+/* JUDUL KANDIDAT */
+
+.judul-kandidat{
+  margin-bottom:20px;
+}
+
+.judul-kandidat h2{
+  margin-bottom:5px;
+}
+
+/* VISI MISI */
+
+.jabatan{
   font-size:14px;
-  margin-bottom:15px;
   color:#ddd;
 }
 
@@ -122,13 +143,30 @@ body{
   margin-left:20px;
 }
 
+/* GARIS */
+
+.line{
+  border-top:1px solid rgba(0,0,0,0.3);
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+/* BUTTON */
+
 .buttons{
-  margin-top:25px;
   display:flex;
   justify-content:space-between;
 }
 
-.vote,
+.vote{
+  background:#7a8c92;
+  border:none;
+  padding:12px 30px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
+
 .back{
   background:#7a8c92;
   border:none;
@@ -136,13 +174,14 @@ body{
   border-radius:8px;
   color:white;
   cursor:pointer;
-  font-size:16px;
 }
 
 .vote:hover,
 .back:hover{
   background:#5f737a;
 }
+
+/* MODAL */
 
 .overlay{
   display:none;
@@ -188,6 +227,7 @@ body{
   background:#34495e;
   color:white;
 }
+
 </style>
 </head>
 
@@ -197,16 +237,26 @@ body{
 
   <div class="sidebar">
 
-    <h2>Sistem<br>E-Voting<br>Osis</h2>
+    <h2>
+      Sistem<br>
+      E-Voting<br>
+      Osis
+    </h2>
 
     <ul class="menu">
       <li>Voting</li>
       <p>Hasil Voting</p>
     </ul>
 
-    <button class="logout">
-      Log Out
-    </button>
+    <div class="bottom-section">
+      <span style="display:block; margin-bottom:10px; margin-left:15px;">
+        Hi Alletta
+      </span>
+
+      <button class="logout">
+        Log Out →
+      </button>
+    </div>
 
   </div>
 
@@ -216,46 +266,71 @@ body{
 
     <div class="card">
 
-      <div class="profile">
-        <img src="bayu-laksmana.png" alt="Bayu Laksmana">
+      <!-- ISI CARD -->
+      <div class="isi-card">
 
-        <p class="name">Bayu Laksmana</p>
+        <div class="profile">
 
-        <small>
-          Kandidat 3 - Calon<br>
-          Ketua OSIS
-        </small>
+          <img src="bayu-laksmana.png" alt="">
+
+          <p class="name">
+            Bayu Laksmana
+          </p>
+
+          <small>
+            Kandidat 3 - Calon<br>
+            Ketua OSIS
+          </small>
+
+        </div>
+
+        <div class="visi-misi">
+
+          <!-- JUDUL -->
+          <div class="judul-kandidat">
+
+            <h2>Bayu Laksmana</h2>
+
+            <p class="jabatan">
+              Kandidat 3 - calon ketua osis
+            </p>
+
+          </div>
+
+          <!-- VISI -->
+          <p>
+            <b>Visi:</b><br>
+            "Meningkatkan Kreativitas dan Inovasi Siswa"
+          </p>
+
+          <br>
+
+          <!-- MISI -->
+          <p><b>Misi:</b></p>
+
+          <ol>
+            <li>
+              Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.
+            </li>
+
+            <li>
+              Membangun program pelatihan dan pengembangan keterampilan siswa.
+            </li>
+
+            <li>
+              Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk
+            </li>
+          </ol>
+
+        </div>
+
       </div>
 
-      <div class="visi-misi">
+      <!-- GARIS -->
+      <div class="line"></div>
 
-        <h2>Bayu Laksmana</h2>
-
-        <p class="jabatan">
-          Kandidat 3 - calon ketua osis
-        </p>
-
-        <p>
-          <b>Visi:</b><br>
-          "Meningkatkan Kreativitas dan Inovasi Siswa"
-        </p>
-
-        <br>
-
-        <p><b>Misi:</b></p>
-
-        <ol>
-          <li>Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
-          <li>Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
-          <li>Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah.</li>
-        </ol>
-
-      </div>
-
-    </div>
-
-    
-    <div class="buttons">
+      <!-- BUTTON -->
+      <div class="buttons">
 
       
       <button class="vote" onclick="bukaModal()">
@@ -309,6 +384,5 @@ function tutupModal() {
 }
 
 </script>
-
 </body>
 </html>

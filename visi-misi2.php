@@ -332,41 +332,40 @@ body{
       <!-- BUTTON -->
       <div class="buttons">
 
-        <button class="vote" onclick="bukaModal()">
-          ✔ Voting
-        </button>
+      
+      <button class="vote" onclick="bukaModal()">
+        ✔ Voting
+      </button>
 
-        <button class="back">
-          ↩ Kembali
-        </button>
+      <button class="back"
+      onclick="window.location.href='halaman4.php'">
+        ↩ Kembali
+      </button>
 
-      </div>
-
-    </div>
-
+    </div> 
   </div>
-
 </div>
 
-<!-- MODAL -->
+
 <div class="overlay" id="modalBox">
 
   <div class="modal">
 
     <p>
       <b>Yakin dengan pilihan anda?</b><br><br>
+         Setelah klik “Simpan”,<br>
+         pilihan anda tidak dapat diubah.
+      </p>
 
-      Setelah klik “Simpan”,<br>
-      pilihan anda tidak dapat di ubah.
-    </p>
-
+    
     <button class="btn-simpan"
-      onclick="window.location.href='halamanakhir.php'">
+    onclick="window.location.href='halamanakhir.php'">
       SIMPAN
     </button>
 
+    
     <button class="btn-batal"
-      onclick="tutupModal()">
+    onclick="tutupModal()">
       BATAL
     </button>
 
@@ -385,6 +384,5 @@ function tutupModal() {
 }
 
 </script>
-
 </body>
 </html>
