@@ -53,6 +53,7 @@
         }
 
         .nav-links .active {
+            font-family: 'Inika';
             font-weight: bold;
             color: #f2f4f5;
             background: rgba(255,255,255,0.15);
@@ -74,7 +75,7 @@
             cursor: pointer;
             border-radius: 20px;
             display: inline-block;
-            outline: 2px solid black;
+            outline: 1px solid black;
         }
 
         .main-wrapper {
@@ -159,7 +160,7 @@
             border-radius: 15px;
             margin-bottom: 10px;
             font-weight: bold;
-            outline: 2px solid black;
+            outline: 1px solid black;
         }
 
         .percentage-label{

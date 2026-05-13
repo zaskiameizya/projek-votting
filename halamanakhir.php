@@ -80,7 +80,7 @@
             cursor: pointer;
             border-radius: 20px;
             display: inline-block;
-            outline: 2px solid black;
+            outline: 1px solid black;
         }
 
         .content{
@@ -143,7 +143,7 @@
             margin-top: 50px;
             border:none;
             transition:0.3s;
-            outline: 2px solid black;
+            outline: 1px solid black;
         }
 
         .btn:hover{
