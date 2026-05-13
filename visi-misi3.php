@@ -14,6 +14,7 @@
 
 body{
   background-image: url('BG.jpeg');
+  background-size: cover;
 }
 
 .container{
@@ -62,17 +63,17 @@ body{
 }
 
 .logout{
-    font-family: 'Inika', serif;
-    font-size: 15px;
-    display: block;
-    text-align: center; 
-    width: 100%;
-    height: 30px;
-    border-radius: 20px;
-    background: #2c4f5a;
-    color: white;
-    cursor: pointer;
-    border: none;
+  font-family: 'Inika', serif;
+  font-size: 15px;
+  display: block;
+  text-align: center; 
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  background: #2c4f5a;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
 .main{
@@ -93,6 +94,7 @@ body{
   border-radius:12px;
   backdrop-filter: blur(5px);
 }
+
 .profile{
   width:200px;
   text-align:center;
@@ -126,15 +128,7 @@ body{
   justify-content:space-between;
 }
 
-.vote{
-  background:#7a8c92;
-  border:none;
-  padding:12px 30px;
-  border-radius:8px;
-  color:white;
-  cursor:pointer;
-}
-
+.vote,
 .back{
   background:#7a8c92;
   border:none;
@@ -142,6 +136,7 @@ body{
   border-radius:8px;
   color:white;
   cursor:pointer;
+  font-size:16px;
 }
 
 .vote:hover,
@@ -149,57 +144,59 @@ body{
   background:#5f737a;
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
+.overlay{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  justify-content:center;
+  align-items:center;
 }
 
-.modal {
-  background: #6f8c9c;
-  padding: 20px;
-  border-radius: 10px;
-  width: 350px;
-  text-align: center;
-  border: 2px solid black;
-  color: black;
+.modal{
+  background:#6f8c9c;
+  padding:20px;
+  border-radius:10px;
+  width:350px;
+  text-align:center;
+  border:2px solid black;
+  color:black;
 }
 
-.modal p {
-  margin-bottom: 20px;
-  font-size: 16px;
+.modal p{
+  margin-bottom:20px;
+  font-size:16px;
 }
 
-.modal button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  margin: 5px;
-  cursor: pointer;
+.modal button{
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  margin:5px;
+  cursor:pointer;
 }
 
-.btn-simpan {
-  background: #2c3e50;
-  color: white;
+.btn-simpan{
+  background:#2c3e50;
+  color:white;
 }
 
-.btn-batal {
-  background: #34495e;
-  color: white;
+.btn-batal{
+  background:#34495e;
+  color:white;
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
   <div class="sidebar">
+
     <h2>Sistem<br>E-Voting<br>Osis</h2>
 
     <ul class="menu">
@@ -207,7 +204,10 @@ body{
       <p>Hasil Voting</p>
     </ul>
 
-    <button class="logout">Log Out</button>
+    <button class="logout">
+      Log Out
+    </button>
+
   </div>
 
   <div class="main">
@@ -217,58 +217,89 @@ body{
     <div class="card">
 
       <div class="profile">
-        <img src="bayu-laksmana.png" alt="">
+        <img src="bayu-laksmana.png" alt="Bayu Laksmana">
+
         <p class="name">Bayu Laksmana</p>
-        <small>Kandidat 3 - Calon<br>Ketua OSIS</small>
+
+        <small>
+          Kandidat 3 - Calon<br>
+          Ketua OSIS
+        </small>
       </div>
 
       <div class="visi-misi">
+
         <h2>Bayu Laksmana</h2>
-        <p class="jabatan">Kandidat 3 - calon ketua osis</p>
 
-        <p><b>Visi:</b><br>
-        "Meningkatkan Kreativitas dan Inovasi Siswa"
-
+        <p class="jabatan">
+          Kandidat 3 - calon ketua osis
         </p>
 
+        <p>
+          <b>Visi:</b><br>
+          "Meningkatkan Kreativitas dan Inovasi Siswa"
+        </p>
+
+        <br>
+
         <p><b>Misi:</b></p>
+
         <ol>
           <li>Meningkatkan apresiasi dan kreativitas siswa dalam bidang seni dan budaya.</li>
           <li>Membangun program pelatihan dan pengembangan keterampilan siswa.</li>
-          <li>Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah untuk</li>
+          <li>Meningkatkan kerja sama dengan alumni dan komunitas luar sekolah.</li>
         </ol>
+
       </div>
 
     </div>
 
+    
     <div class="buttons">
-      <button class="vote" onclick="bukaModal()">✔ Voting</button>
-      <button class="back">↩ Kembali</button>
-    </div>
 
+      
+      <button class="vote" onclick="bukaModal()">
+        ✔ Voting
+      </button>
+
+      <button class="back"
+      onclick="window.location.href='halaman4.php'">
+        ↩ Kembali
+      </button>
+
+    </div> 
   </div>
-
 </div>
+
 
 <div class="overlay" id="modalBox">
+
   <div class="modal">
+
     <p>
       <b>Yakin dengan pilihan anda?</b><br><br>
-      Setelah klik “Simpan”,<br>
-      pilihan anda tidak dapat di ubah.
-    </p>
+         Setelah klik “Simpan”,<br>
+         pilihan anda tidak dapat diubah.
+      </p>
 
-    <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">SIMPAN</button>
-    <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">BATAL</button>
+    
+    <button class="btn-simpan"
+    onclick="window.location.href='halamanakhir.php'">
+      SIMPAN
+    </button>
+
+    
+    <button class="btn-batal"
+    onclick="tutupModal()">
+      BATAL
+    </button>
+
   </div>
-</div>
 
-<div class="buttons">
-          <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
-          <button class="btn-batal" onclick="window.location.href='halaman4.php'">KEMBALI</button>
 </div>
 
 <script>
+
 function bukaModal() {
   document.getElementById("modalBox").style.display = "flex";
 }
@@ -276,6 +307,7 @@ function bukaModal() {
 function tutupModal() {
   document.getElementById("modalBox").style.display = "none";
 }
+
 </script>
 
 </body>

@@ -198,16 +198,18 @@ body{
 <div class="container">
 
   <div class="sidebar">
+
     <h2>Sistem<br>E-Voting<br>Osis</h2>
 
     <ul class="menu">
       <li>Voting</li>
       <p>Hasil Voting</p>
     </ul>
-     <div class="bottom-section">
-      <span style="display:block; margin-bottom:10px;">Hi Alletta</span>
-      <button class="logout">Log Out →</button>
-    </div>
+
+    <button class="logout">
+      Log Out
+    </button>
+
   </div>
 
   <div class="main">
@@ -217,58 +219,89 @@ body{
     <div class="card">
 
       <div class="profile">
-        <img src="alya-azzahra.png" alt="">
+        <img src="alya-azzahra.png" alt="Bayu Laksmana">
+
         <p class="name">Alya Azzahra</p>
-        <small>Kandidat 2 - Calon<br>Ketua OSIS</small>
+
+        <small>
+          Kandidat 2 - Calon<br>
+          Ketua OSIS
+        </small>
       </div>
 
       <div class="visi-misi">
-        <h2>Alya Azzahra</h2>
-        <p class="jabatan">Kandidat 2 - calon ketua osis</p>
 
-        <p><b>Visi:</b><br>
-        "Membangun Sekolah yang Ramah dan Inklusif"
+        <h2>Alya azzahra</h2>
 
+        <p class="jabatan">
+          Kandidat 2 - calon ketua osis
         </p>
 
+        <p>
+          <b>Visi:</b><br>
+          "Membangun Sekolah yang Ramah dan Inklusif"
+        </p>
+
+        <br>
+
         <p><b>Misi:</b></p>
+
         <ol>
           <li>Meningkatkan kesadaran dan kepedulian siswa terhadap isu-isu sosial dan lingkungan.</li>
           <li>Membangun lingkungan sekolah yang aman dan nyaman bagi semua siswa.</li>
           <li>Meningkatkan partisipasi siswa dalam kegiatan sukarela dan bakti sosial.</li>
         </ol>
+
       </div>
 
     </div>
 
+    
     <div class="buttons">
-      <button class="vote" onclick="bukaModal()">✔ Voting</button>
-      <button class="back">↩ Kembali</button>
-    </div>
 
+      
+      <button class="vote" onclick="bukaModal()">
+        ✔ Voting
+      </button>
+
+      <button class="back"
+      onclick="window.location.href='halaman4.php'">
+        ↩ Kembali
+      </button>
+
+    </div> 
   </div>
-
 </div>
+
 
 <div class="overlay" id="modalBox">
+
   <div class="modal">
+
     <p>
       <b>Yakin dengan pilihan anda?</b><br><br>
-      Setelah klik “Simpan”,<br>
-      pilihan anda tidak dapat di ubah.
-    </p>
+         Setelah klik “Simpan”,<br>
+         pilihan anda tidak dapat diubah.
+      </p>
 
-    <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">SIMPAN </button>
-    <button class="btn-batal" onclick="window.location.href='visi-misi2.php'">BATAL</button>
+    
+    <button class="btn-simpan"
+    onclick="window.location.href='halamanakhir.php'">
+      SIMPAN
+    </button>
+
+    
+    <button class="btn-batal"
+    onclick="tutupModal()">
+      BATAL
+    </button>
+
   </div>
-</div>
 
-<div class="buttons">
-          <button class="btn-simpan" onclick="window.location.href='halamanakhir.php'">VOTING</button>
-          <button class="btn-batal" onclick="window.location.href='halamankonfirmasi.php'">KEMBALI</button>
 </div>
 
 <script>
+
 function bukaModal() {
   document.getElementById("modalBox").style.display = "flex";
 }
@@ -276,6 +309,7 @@ function bukaModal() {
 function tutupModal() {
   document.getElementById("modalBox").style.display = "none";
 }
+
 </script>
 
 </body>
