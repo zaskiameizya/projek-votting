@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Sistem E-Voting OSIS</title>
+<meta charset="UTF-8">
+<title>Sistem E-Voting OSIS</title>
 
 <style>
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Inika', Serif;
+  font-family: Inika;
 }
 
 body{
@@ -62,17 +63,19 @@ body{
 }
 
 .logout{
-    font-family: 'Inika', serif;
-    font-size: 15px;
-    display: block;
-    text-align: center; 
-    height: 30px;
-    border-radius: 20px;
-    background: #2c4f5a;
-    color: white;
-    cursor: pointer;
-    border: none;
+  font-family: 'Inika', serif;
+  font-size:15px;
+  display:block;
+  text-align:center;
+  width: 100px;
+  height:30px;
+  border-radius:20px;
+  background:#2c4f5a;
+  color:white;
+  cursor:pointer;
+  border:none;
 }
+
 .main{
   flex:1;
   padding:40px;
@@ -84,13 +87,24 @@ body{
   margin-bottom:30px;
 }
 
+/* CARD */
+
 .card{
-  display:flex;
-  background: #A3B8B1;
+  background:#A3B8B1;
   padding:25px;
   border-radius:12px;
-  backdrop-filter: blur(5px);
+  backdrop-filter:blur(5px);
 }
+
+/* ISI CARD */
+
+.isi-card{
+  display:flex;
+  gap:25px;
+}
+
+/* PROFILE */
+
 .profile{
   width:200px;
   text-align:center;
@@ -100,17 +114,28 @@ body{
   width:130px;
   border-radius:10px;
   margin-bottom:10px;
-  background:white; 
-  padding:5px; 
+  background:white;
+  padding:5px;
 }
 
 .profile .name{
   font-weight:bold;
 }
 
-.visi-misi .jabatan{
+/* JUDUL KANDIDAT */
+
+.judul-kandidat{
+  margin-bottom:20px;
+}
+
+.judul-kandidat h2{
+  margin-bottom:5px;
+}
+
+/* VISI MISI */
+
+.jabatan{
   font-size:14px;
-  margin-bottom:15px;
   color:#ddd;
 }
 
@@ -118,8 +143,17 @@ body{
   margin-left:20px;
 }
 
+/* GARIS */
+
+.line{
+  border-top:1px solid rgba(0,0,0,0.3);
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+/* BUTTON */
+
 .buttons{
-  margin-top:25px;
   display:flex;
   justify-content:space-between;
 }
@@ -147,68 +181,82 @@ body{
   background:#5f737a;
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
+/* MODAL */
+
+.overlay{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  justify-content:center;
+  align-items:center;
 }
 
-.modal {
-  background: #6f8c9c;
-  padding: 20px;
-  border-radius: 10px;
-  width: 350px;
-  text-align: center;
-  border: 2px solid black;
-  color: black;
+.modal{
+  background:#6f8c9c;
+  padding:20px;
+  border-radius:10px;
+  width:350px;
+  text-align:center;
+  border:2px solid black;
+  color:black;
 }
 
-.modal p {
-  margin-bottom: 20px;
-  font-size: 16px;
+.modal p{
+  margin-bottom:20px;
+  font-size:16px;
 }
 
-.modal button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  margin: 5px;
-  cursor: pointer;
+.modal button{
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  margin:5px;
+  cursor:pointer;
 }
 
-.btn-simpan {
-  background: #2c3e50;
-  color: white;
+.btn-simpan{
+  background:#2c3e50;
+  color:white;
 }
 
-.btn-batal {
-  background: #34495e;
-  color: white;
+.btn-batal{
+  background:#34495e;
+  color:white;
 }
+
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
   <div class="sidebar">
 
-    <h2>Sistem<br>E-Voting<br>Osis</h2>
+    <h2>
+      Sistem<br>
+      E-Voting<br>
+      Osis
+    </h2>
 
     <ul class="menu">
       <li>Voting</li>
       <p>Hasil Voting</p>
     </ul>
 
-    <button class="logout">
-      Log Out
-    </button>
+    <div class="bottom-section">
+      <span style="display:block; margin-bottom:10px; margin-left:15px;">
+        Hi Alletta
+      </span>
+
+      <button class="logout">
+        Log Out →
+      </button>
+    </div>
 
   </div>
 
@@ -218,81 +266,107 @@ body{
 
     <div class="card">
 
-      <div class="profile">
-        <img src="alya-azzahra.png" alt="Bayu Laksmana">
+      <!-- ISI CARD -->
+      <div class="isi-card">
 
-        <p class="name">Alya Azzahra</p>
+        <div class="profile">
 
-        <small>
-          Kandidat 2 - Calon<br>
-          Ketua OSIS
-        </small>
+          <img src="alya-azzahra.png" alt="">
+
+          <p class="name">
+            Alya Azzahra
+          </p>
+
+          <small>
+            Kandidat 2 - Calon<br>
+            Ketua OSIS
+          </small>
+
+        </div>
+
+        <div class="visi-misi">
+
+          <!-- JUDUL -->
+          <div class="judul-kandidat">
+
+            <h2>Alya Azzahra</h2>
+
+            <p class="jabatan">
+              Kandidat 2 - calon ketua osis
+            </p>
+
+          </div>
+
+          <!-- VISI -->
+          <p>
+            <b>Visi:</b><br>
+            "Membangun Sekolah yang Ramah dan Inklusif"
+          </p>
+
+          <br>
+
+          <!-- MISI -->
+          <p><b>Misi:</b></p>
+
+          <ol>
+            <li>
+              Meningkatkan kesadaran dan kepedulian siswa terhadap isu-isu sosial dan lingkungan.
+            </li>
+
+            <li>
+              Membangun lingkungan sekolah yang aman dan nyaman bagi semua siswa.
+            </li>
+
+            <li>
+              Meningkatkan partisipasi siswa dalam kegiatan sukarela dan bakti sosial.
+            </li>
+          </ol>
+
+        </div>
+
       </div>
 
-      <div class="visi-misi">
+      <!-- GARIS -->
+      <div class="line"></div>
 
-        <h2>Alya azzahra</h2>
+      <!-- BUTTON -->
+      <div class="buttons">
 
-        <p class="jabatan">
-          Kandidat 2 - calon ketua osis
-        </p>
+        <button class="vote" onclick="bukaModal()">
+          ✔ Voting
+        </button>
 
-        <p>
-          <b>Visi:</b><br>
-          "Membangun Sekolah yang Ramah dan Inklusif"
-        </p>
-
-        <br>
-
-        <p><b>Misi:</b></p>
-
-        <ol>
-          <li>Meningkatkan kesadaran dan kepedulian siswa terhadap isu-isu sosial dan lingkungan.</li>
-          <li>Membangun lingkungan sekolah yang aman dan nyaman bagi semua siswa.</li>
-          <li>Meningkatkan partisipasi siswa dalam kegiatan sukarela dan bakti sosial.</li>
-        </ol>
+        <button class="back">
+          ↩ Kembali
+        </button>
 
       </div>
 
     </div>
 
-    
-    <div class="buttons">
-
-      
-      <button class="vote" onclick="bukaModal()">
-        ✔ Voting
-      </button>
-
-      <button class="back"
-      onclick="window.location.href='halaman4.php'">
-        ↩ Kembali
-      </button>
-
-    </div> 
   </div>
+
 </div>
 
-
+<!-- MODAL -->
 <div class="overlay" id="modalBox">
 
   <div class="modal">
 
     <p>
       <b>Yakin dengan pilihan anda?</b><br><br>
-         Setelah klik “Simpan”,<br>
-         pilihan anda tidak dapat diubah.
-      </p>
 
-    
+      Setelah klik “Simpan”,<br>
+      pilihan anda tidak dapat di ubah.
+    </p>
+
     <button class="btn-simpan"
-    onclick="window.location.href='halamanakhir.php'">
+      onclick="window.location.href='halamanakhir.php'">
       SIMPAN
     </button>
 
-    
     <button class="btn-batal"
-    onclick="tutupModal()">
+      onclick="tutupModal()">
       BATAL
     </button>
 
