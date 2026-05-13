@@ -30,7 +30,7 @@ body {
     text-align: center;
     font-family: 'Abril Fatface';
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .container {
