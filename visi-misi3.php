@@ -85,6 +85,7 @@ body{
 .main h1{
   text-align:center;
   margin-bottom:30px;
+  font-size: 64px;
 }
 
 /* CARD */
@@ -273,11 +274,11 @@ body{
 
           <img src="bayu-laksmana.png" alt="">
 
-          <p class="name">
+          <p class="name" style="color: black;">
             Bayu Laksmana
           </p>
 
-          <small>
+          <small style="color: black;">
             Kandidat 3 - Calon<br>
             Ketua OSIS
           </small>
@@ -287,11 +288,11 @@ body{
         <div class="visi-misi">
 
           <!-- JUDUL -->
-          <div class="judul-kandidat">
+          <div class="judul-kandidat" style="color: black;">
 
             <h2>Bayu Laksmana</h2>
 
-            <p class="jabatan">
+            <p class="jabatan" style="color: black;">
               Kandidat 3 - calon ketua osis
             </p>
 

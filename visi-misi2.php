@@ -85,6 +85,7 @@ body{
 .main h1{
   text-align:center;
   margin-bottom:30px;
+  font-size: 64px;
 }
 
 /* CARD */
@@ -273,11 +274,11 @@ body{
 
           <img src="alya-azzahra.png" alt="">
 
-          <p class="name">
+          <p class="name" style="color: black;">
             Alya Azzahra
           </p>
 
-          <small>
+          <small style="color: black;">
             Kandidat 2 - Calon<br>
             Ketua OSIS
           </small>
@@ -287,11 +288,11 @@ body{
         <div class="visi-misi">
 
           <!-- JUDUL -->
-          <div class="judul-kandidat">
+          <div class="judul-kandidat" style="color: black;">
 
             <h2>Alya Azzahra</h2>
 
-            <p class="jabatan">
+            <p class="jabatan" style="color: black;">
               Kandidat 2 - calon ketua osis
             </p>
 

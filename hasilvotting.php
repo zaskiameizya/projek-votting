@@ -160,7 +160,6 @@
             border-radius: 15px;
             margin-bottom: 10px;
             font-weight: bold;
-            outline: 1px solid black;
         }
 
         .percentage-label{
